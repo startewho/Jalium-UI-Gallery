@@ -15,7 +15,7 @@
                     <TextBlock Text="Interactive Demo" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,16" />
 
                     <StackPanel Orientation="Horizontal">
-                        <GroupBox Header="Personal Information" Width="250" Margin="0,0,16,0" Foreground="{DynamicResource GalleryTextPrimary}">
+                        <GroupBox Header="Personal Information" Width="250" Margin="0,0,16,0">
                             <StackPanel Orientation="Vertical" Margin="8">
                                 <TextBlock Text="Name:" Margin="0,0,0,4" />
                                 <TextBox Margin="0,0,0,8" />
@@ -24,11 +24,11 @@
                             </StackPanel>
                         </GroupBox>
 
-                        <GroupBox Header="Preferences" Width="250" Foreground="{DynamicResource GalleryTextPrimary}">
+                        <GroupBox Header="Preferences" Width="250">
                             <StackPanel Orientation="Vertical" Margin="8">
-                                <CheckBox Content="Receive updates" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                                <CheckBox Content="Enable dark mode" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                                <CheckBox Content="Show advanced options" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                <CheckBox Content="Receive updates" Margin="0,0,0,8"/>
+                                <CheckBox Content="Enable dark mode" Margin="0,0,0,8"/>
+                                <CheckBox Content="Show advanced options"/>
                             </StackPanel>
                         </GroupBox>
                     </StackPanel>
@@ -56,7 +56,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="XAML Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"
@@ -82,7 +81,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="C# Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"

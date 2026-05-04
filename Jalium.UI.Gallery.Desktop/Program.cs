@@ -1,6 +1,7 @@
 using Jalium.UI;
 using Jalium.UI.Gallery.Modules.Main;
 using Jalium.UI.Gallery.Services;
+using Jalium.UI.Hosting;
 using Jalium.UI.Interop;
 using Jalium.UI.Markup;
 using Jalium.UI.Media;
@@ -23,10 +24,19 @@ internal static class Program
     {
         // Prefer Impeller for smooth GPU-accelerated frames. Swap to RenderBackend.D3D
         // or .OpenGL if you need to pin the backend for debugging.
-        var renderContext = RenderContext.GetOrCreateCurrent(RenderBackend.Auto);
+        var renderContext = RenderContext.GetOrCreateCurrent(RenderBackend.D3D12);
         renderContext.DefaultRenderingEngine = RenderingEngine.Impeller;
 
-        var builder = AppBuilder.CreateBuilder(args);
+        // DisableDefaults skips the Microsoft.Extensions.Hosting default config /
+        // logging chain (appsettings.json, env-var, command-line, user-secrets,
+        // Console/Debug/EventSource/EventLog logger providers, ConsoleLifetime).
+        // Gallery is a GUI demo and uses none of them — opting out drops ~27
+        // managed DLL loads from the startup cost without losing functionality.
+        var builder = AppBuilder.CreateBuilder(new AppBuilderSettings
+        {
+            Args = args,
+            DisableDefaults = true,
+        });
 
         // AddAppServices registers every concrete service implementation exposed by
         // the Services project. Additional Add{Transient,Scoped,Singleton} or
@@ -38,6 +48,7 @@ internal static class Program
         // Post-Build: UseShared binds the App Application subclass and activates
         // DevTools. See AppBuilderExtensions in the Main module to customize.
         app.UseShared();
+        app.UseIdleResourceReclamation();
 
         return app.Run();
     }

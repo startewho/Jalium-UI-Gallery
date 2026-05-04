@@ -2,6 +2,7 @@ using Jalium.UI;
 using Jalium.UI.Controls;
 using Jalium.UI.Controls.Primitives;
 using Jalium.UI.Controls.Themes;
+using Jalium.UI.Gallery.Modules.Main.Support;
 using Jalium.UI.Gallery.Modules.Main.Themes;
 using Jalium.UI.Gallery.Modules.Main.ViewModels;
 using Jalium.UI.Gallery.Modules.Main.Views.Pages;
@@ -29,7 +30,18 @@ public partial class MainWindow : Window
     private Border? _sectionBadge;
     private string _currentPageTag = "home";
     private bool _isSearchFilterActive;
+    private OverviewPage? _overviewOverlay;
+    private bool _hasEnteredGallery;
     private static readonly Dictionary<string, BitmapImage> _embeddedBitmapCache = new();
+
+    // Timing tokens for the Overview → Shell handoff. Startup delay keeps the
+    // overlay invisible for a frame so the first render doesn't flash an
+    // already-opaque layout; the shell fade slightly outlasts the overlay fade
+    // so the navigation chrome "settles in" instead of popping on.
+    private static readonly TimeSpan StartupDelay = TimeSpan.FromMilliseconds(80);
+    private static readonly TimeSpan OverlayFadeInDuration = TimeSpan.FromMilliseconds(520);
+    private static readonly TimeSpan OverlayFadeOutDuration = TimeSpan.FromMilliseconds(380);
+    private static readonly TimeSpan ShellFadeInDuration = TimeSpan.FromMilliseconds(520);
 
     private sealed class SearchEntry
     {
@@ -86,6 +98,7 @@ public partial class MainWindow : Window
         { "checkbox", () => new CheckBoxPage() },
         { "radiobutton", () => new RadioButtonPage() },
         { "slider", () => new SliderPage() },
+        { "rangeslider", () => new RangeSliderPage() },
         { "progressbar", () => new ProgressBarPage() },
         { "textbox", () => new TextBoxPage() },
         { "passwordbox", () => new PasswordBoxPage() },
@@ -104,6 +117,7 @@ public partial class MainWindow : Window
         { "scrollviewer", () => new ScrollViewerPage() },
         { "tabcontrol", () => new TabControlPage() },
         { "treeview", () => new TreeViewPage() },
+        { "treeselector", () => new TreeSelectorPage() },
         { "image", () => new ImagePage() },
         { "qrcode", () => new QRCodePage() },
         { "listbox", () => new ListBoxPage() },
@@ -157,6 +171,7 @@ public partial class MainWindow : Window
         { "docklayout", () => new DockLayoutPage() },
         { "webview", () => new WebViewPage() },
         { "transitions", () => new TransitionDemoPage() },
+        { "themecolors", () => new ThemeColorsPage() },
         // Menus & Toolbars pages
         { "appbarbutton", () => new AppBarButtonPage() },
         { "appbarseparator", () => new AppBarSeparatorPage() },
@@ -216,17 +231,8 @@ public partial class MainWindow : Window
     public MainWindow(IMessageService messageService)
     {
         InitializeComponent();
-
-        // StartupUri creates the window via a parameterless constructor, so we
-        // pull IMessageService off the application-scoped service provider.
-        // MainModule stays the single composition entry for code-behind DI wiring.
         _viewModel = MainModule.CreateViewA(messageService);
         DataContext = _viewModel;
-
-        // Setting the window Foreground seeds the Foreground inheritance chain
-        // so every descendant Control (Button, ToggleSwitch, ListBox, ...) that
-        // doesn't explicitly override Foreground picks up the active gallery
-        // text brush instead of the stale Dark-mode default on Control.Foreground.
         Foreground = GalleryTheme.TextPrimaryBrush;
 
         BuildTitleBarCommands();
@@ -248,9 +254,75 @@ public partial class MainWindow : Window
 
         NavigateToPage("home");
 
-        // Embedded WebView2 (child HWND) requires redirected parent HWND.
-        // Keep backdrop disabled in Gallery default config.
         SystemBackdrop = WindowBackdropType.None;
+
+        InitializeOverviewOverlay();
+    }
+
+    /// <summary>
+    /// Builds the Overview overlay, hides the NavigationView shell, and
+    /// schedules the startup fade-in. The overlay sits on top of the
+    /// NavigationView inside <c>RootShellGrid</c> so both layers coexist and
+    /// we can cross-fade between them without tearing down the shell.
+    /// </summary>
+    private void InitializeOverviewOverlay()
+    {
+        if (RootShellGrid == null || NavigationView == null)
+        {
+            return;
+        }
+
+        NavigationView.Opacity = 0.0;
+        NavigationView.IsHitTestVisible = false;
+
+        _overviewOverlay = new OverviewPage
+        {
+            Opacity = 0.0,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
+            VerticalAlignment = VerticalAlignment.Stretch
+        };
+        _overviewOverlay.EnterRequested += OnOverviewEnterRequested;
+        RootShellGrid.Children.Add(_overviewOverlay);
+
+        FadeAnimator.After(StartupDelay, () =>
+        {
+            if (_overviewOverlay != null)
+            {
+                FadeAnimator.Fade(_overviewOverlay, 0.0, 1.0, OverlayFadeInDuration);
+            }
+        });
+    }
+
+    /// <summary>
+    /// Fires once when the user clicks the Overview's "Enter Gallery" button.
+    /// Cross-fades the overlay out, simultaneously fades the NavigationView
+    /// shell in, then detaches the overlay and releases its event wiring. The
+    /// <see cref="_hasEnteredGallery"/> guard keeps a rapid double-click from
+    /// kicking off a second tween while the first is still running.
+    /// </summary>
+    private void OnOverviewEnterRequested(object? sender, EventArgs e)
+    {
+        if (_hasEnteredGallery || _overviewOverlay == null || NavigationView == null)
+        {
+            return;
+        }
+
+        _hasEnteredGallery = true;
+
+        // Let the shell accept input the moment the transition begins so focus
+        // lands naturally on the NavigationView as the overlay dissolves.
+        NavigationView.IsHitTestVisible = true;
+        _overviewOverlay.IsHitTestVisible = false;
+
+        FadeAnimator.Fade(NavigationView, 0.0, 1.0, ShellFadeInDuration);
+
+        var overlay = _overviewOverlay;
+        FadeAnimator.Fade(overlay, overlay.Opacity, 0.0, OverlayFadeOutDuration, () =>
+        {
+            overlay.EnterRequested -= OnOverviewEnterRequested;
+            RootShellGrid?.Children.Remove(overlay);
+            _overviewOverlay = null;
+        });
     }
 
     private void OnGalleryModeChanged(object? sender, EventArgs e)
@@ -703,6 +775,7 @@ public partial class MainWindow : Window
         AddChildItem(controlsGroup, "CheckBox", "checkbox");
         AddChildItem(controlsGroup, "RadioButton", "radiobutton");
         AddChildItem(controlsGroup, "Slider", "slider");
+        AddChildItem(controlsGroup, "RangeSlider", "rangeslider");
         AddChildItem(controlsGroup, "ProgressBar", "progressbar");
         AddChildItem(controlsGroup, "TextBox", "textbox");
         AddChildItem(controlsGroup, "PasswordBox", "passwordbox");
@@ -787,6 +860,7 @@ public partial class MainWindow : Window
         AddChildItem(collectionsGroup, "ListBox", "listbox");
         AddChildItem(collectionsGroup, "ListView", "listview");
         AddChildItem(collectionsGroup, "TreeView", "treeview");
+        AddChildItem(collectionsGroup, "TreeSelector", "treeselector");
         AddChildItem(collectionsGroup, "DataGrid", "datagrid");
         AddChildItem(collectionsGroup, "TreeDataGrid", "treedatagrid");
         AddChildItem(collectionsGroup, "Calendar", "calendar");
@@ -835,6 +909,7 @@ public partial class MainWindow : Window
         AddChildItem(systemGroup, "Shell Integration", "shellintegration");
         AddChildItem(systemGroup, "TitleBar", "titlebar");
         AddChildItem(systemGroup, "Terminal", "terminal");
+        AddChildItem(systemGroup, "Theme Colors", "themecolors");
 
         // Data Viewers (expandable group)
         var dataViewersGroup = AddGroupItem("Data Viewers", "dataviewers");

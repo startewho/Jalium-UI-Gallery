@@ -6,12 +6,10 @@
     <StackPanel Orientation="Vertical">
         <TextBlock Text="ContentDialog"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <TextBlock Text="Modal dialogs for confirmations, inline review flows, and async validation without requiring XamlRoot."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <Border Background="{DynamicResource GalleryCardBackground}"
@@ -23,11 +21,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Popup ContentDialog"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Shows a classic modal dialog over the current window. Enter triggers the default button and Escape closes."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -39,15 +35,14 @@
                                     Content="Show Dialog"
                                     Width="110"
                                     Height="32"
-                                    Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                    Margin="0,0,8,0"/>
                             <Button x:Name="ShowFullSizeDialogButton"
                                     Content="Full Size"
                                     Width="100"
-                                    Height="32" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                    Height="32"/>
                         </StackPanel>
                         <TextBlock x:Name="PopupDialogResultText"
                                    Text="Open a dialog to see the result here."
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    TextWrapping="Wrap"/>
                     </StackPanel>
                 </Border>
@@ -63,11 +58,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="In-Place ContentDialog"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="This example keeps the dialog inside a host region to preview embedded review flows."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -78,7 +71,7 @@
                             <Button x:Name="ShowInlineDialogButton"
                                     Content="Review Changes"
                                     Width="130"
-                                    Height="32" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                    Height="32"/>
                         </StackPanel>
 
                         <Grid x:Name="InlineDialogHost"
@@ -92,17 +85,13 @@
                                 <StackPanel Orientation="Vertical">
                                     <TextBlock Text="Theme Preset Preview"
                                                FontSize="18"
-                                               Foreground="{DynamicResource GalleryTextPrimary}"
                                                Margin="0,0,0,8"/>
                                     <TextBlock Text="The inline dialog below stays inside this card instead of covering the whole window, so you can review changes inline without losing surrounding context."
-                                               Foreground="{DynamicResource GalleryTextSecondary}"
                                                TextWrapping="Wrap"
                                                Margin="0,0,0,12"/>
                                     <TextBlock Text="Preset: Studio Contrast"
-                                               Foreground="{DynamicResource GalleryTextPrimary}"
                                                Margin="0,0,0,4"/>
                                     <TextBlock Text="Highlights focused elements with stronger borders, denser surfaces, and a slightly larger review region for modal content."
-                                               Foreground="{DynamicResource GalleryTextTertiary}"
                                                TextWrapping="Wrap"/>
                                 </StackPanel>
                             </Border>
@@ -115,28 +104,25 @@
                                            DefaultButton="Primary">
                                 <StackPanel Orientation="Vertical">
                                     <TextBlock Text="This dialog is shown with ContentDialogPlacement.InPlace."
-                                               Foreground="{DynamicResource GalleryTextPrimary}"
                                                TextWrapping="Wrap"
                                                Margin="0,0,0,12"/>
                                     <TextBlock Text="It uses the surrounding card as the host surface, which makes it useful for review and configuration flows embedded in a page."
-                                               Foreground="{DynamicResource GalleryTextSecondary}"
                                                TextWrapping="Wrap"
                                                Margin="0,0,0,12"/>
                                     <CheckBox Content="Enable acrylic backdrop"
                                               IsChecked="True"
-                                              Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                              Margin="0,0,0,8"/>
                                     <CheckBox Content="Use compact density"
                                               IsChecked="True"
-                                              Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                              Margin="0,0,0,8"/>
                                     <CheckBox Content="Promote accent actions to title area"
-                                              IsChecked="False" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                              IsChecked="False"/>
                                 </StackPanel>
                             </ContentDialog>
                         </Grid>
 
                         <TextBlock x:Name="InlineDialogResultText"
                                    Text="The inline host is idle."
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    Margin="0,12,0,0"
                                    TextWrapping="Wrap"/>
                     </StackPanel>
@@ -153,11 +139,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Deferred Validation"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Primary button deferrals can run async work before the dialog is allowed to close."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -168,10 +152,9 @@
                                 Content="Validate Name"
                                 Width="120"
                                 Height="32"
-                                Margin="0,0,0,12" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                Margin="0,0,0,12"/>
                         <TextBlock x:Name="DeferredDialogStatusText"
                                    Text="Try confirming with an empty field to keep the dialog open."
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    TextWrapping="Wrap"/>
                     </StackPanel>
                 </Border>
@@ -188,7 +171,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -214,7 +196,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

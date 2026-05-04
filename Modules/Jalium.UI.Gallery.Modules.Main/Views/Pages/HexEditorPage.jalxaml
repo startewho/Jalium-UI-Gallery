@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="HexEditor"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A hex editor control that displays and edits binary data in hexadecimal format with offset, hex, and ASCII columns."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic Hex Editor Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic Hex Editor"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Display and edit binary data with offset, hex, and ASCII columns."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -55,11 +51,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Configuration Options"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Toggle columns and adjust bytes per row using the controls below."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -70,21 +64,17 @@
                             <CheckBox x:Name="ShowAsciiCheckBox"
                                       Content="Show ASCII Column"
                                       IsChecked="True"
-                                      Foreground="{DynamicResource GalleryTextSecondary}"
                                       Margin="0,0,24,0"/>
                             <CheckBox x:Name="ShowOffsetCheckBox"
                                       Content="Show Offset Column"
                                       IsChecked="True"
-                                      Foreground="{DynamicResource GalleryTextSecondary}"
                                       Margin="0,0,24,0"/>
                             <CheckBox x:Name="ShowDataInterpretCheckBox"
                                       Content="Show Data Interpretation"
-                                      IsChecked="False"
-                                      Foreground="{DynamicResource GalleryTextSecondary}"/>
+                                      IsChecked="False"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                             <TextBlock Text="Bytes Per Row:"
-                                       Foreground="{DynamicResource GalleryTextTertiary}"
                                        VerticalAlignment="Center"
                                        Margin="0,0,8,0"/>
                             <Slider x:Name="BytesPerRowSlider"
@@ -95,7 +85,6 @@
                                     VerticalAlignment="Center"/>
                             <TextBlock x:Name="BytesPerRowLabel"
                                        Text="16"
-                                       Foreground="{DynamicResource GalleryTextSecondary}"
                                        Margin="8,0,0,0"
                                        VerticalAlignment="Center"/>
                         </StackPanel>
@@ -119,11 +108,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Read-Only Mode"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A read-only hex viewer for inspecting binary data without modification."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -148,7 +135,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -174,7 +160,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

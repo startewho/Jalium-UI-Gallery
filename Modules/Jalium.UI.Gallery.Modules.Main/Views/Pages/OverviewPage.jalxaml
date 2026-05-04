@@ -1,0 +1,625 @@
+<Page xmlns="http://schemas.jalium.ui/2024"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      x:Class="Jalium.UI.Gallery.Modules.Main.Views.Pages.OverviewPage"
+      Title="Jalium.UI Gallery Overview">
+
+    <!--
+        Landing overlay. Layout is a five-region Grid:
+          • Top strip    — 6 input cards
+          • Bottom strip — 6 feedback / presentation cards
+          • Left column  — 3 content-oriented cards
+          • Right column — 4 effect / shape cards
+          • Center       — Hero CTA
+        Every showcase uses the framework-native control (Button, CheckBox,
+        RadioButton, Slider, ProgressBar, TextBox, PasswordBox, ComboBox,
+        AutoCompleteBox, NumberBox, ToggleSwitch, SplitButton, Markdown,
+        TextEffectPresenter, plus Shape="SuperEllipse" and LiquidGlass="True"
+        on Border, and live Razor @{ for } markup). Code-behind only forwards
+        the "Enter Gallery" click to MainWindow.
+    -->
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="145"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="145"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="230"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="230"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ============================================================== -->
+        <!--                        TOP STRIP (6 cards)                     -->
+        <!-- ============================================================== -->
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="0,12,0,0">
+
+            <!-- Buttons -->
+            <Border Width="170" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Buttons"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,10"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Click Me" Height="28" MinWidth="72"
+                                Margin="0,0,6,0"/>
+                        <Button Content="Disabled" Height="28" MinWidth="72"
+                                IsEnabled="False"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Checkboxes -->
+            <Border Width="180" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Checkboxes"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,6"/>
+                    <CheckBox Margin="0,0,0,2">
+                        <TextBlock Text="Option 1" FontSize="11"/>
+                    </CheckBox>
+                    <CheckBox IsChecked="True" Margin="0,0,0,2">
+                        <TextBlock Text="Option 2 (checked)" FontSize="11"/>
+                    </CheckBox>
+                    <CheckBox IsEnabled="False">
+                        <TextBlock Text="Disabled option" FontSize="11"/>
+                    </CheckBox>
+                </StackPanel>
+            </Border>
+
+            <!-- Text Inputs -->
+            <Border Width="210" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Text Inputs"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,8"/>
+                    <TextBox Text="Pre-filled text" Height="28"
+                             Margin="0,0,0,6"/>
+                    <PasswordBox Password="secret123" Height="28"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Number Box -->
+            <Border Width="170" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Number Box"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,10"/>
+                    <NumberBox Value="42"
+                               SpinButtonPlacementMode="Inline"
+                               HorizontalAlignment="Stretch"/>
+                </StackPanel>
+            </Border>
+
+            <!-- ComboBox -->
+            <Border Width="170" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="ComboBox"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,10"/>
+                    <ComboBox Height="28" SelectedIndex="2"
+                              HorizontalAlignment="Stretch">
+                        <ComboBoxItem Content="Apple"/>
+                        <ComboBoxItem Content="Banana"/>
+                        <ComboBoxItem Content="Cherry"/>
+                        <ComboBoxItem Content="Orange"/>
+                        <ComboBoxItem Content="Grape"/>
+                    </ComboBox>
+                </StackPanel>
+            </Border>
+
+            <!-- Auto Complete -->
+            <Border Width="190" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12">
+                <StackPanel>
+                    <TextBlock Text="Auto Complete"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,10"/>
+                    <AutoCompleteBox Watermark="Type to search..."
+                                     HorizontalAlignment="Stretch"/>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+
+        <!-- ============================================================== -->
+        <!--                    LEFT COLUMN (3 cards)                       -->
+        <!-- ============================================================== -->
+        <StackPanel Grid.Row="1" Grid.Column="0"
+                    Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+
+            <!-- Radio Buttons -->
+            <Border Width="210" Height="160"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,0,12">
+                <StackPanel>
+                    <TextBlock Text="Radio Buttons"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,8"/>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Margin="0,0,12,0">
+                            <TextBlock Text="Size" FontSize="10"
+                                       Margin="0,0,0,4"/>
+                            <RadioButton GroupName="OverviewSize" IsChecked="True">
+                                <TextBlock Text="Small" FontSize="11"/>
+                            </RadioButton>
+                            <RadioButton GroupName="OverviewSize">
+                                <TextBlock Text="Medium" FontSize="11"/>
+                            </RadioButton>
+                            <RadioButton GroupName="OverviewSize">
+                                <TextBlock Text="Large" FontSize="11"/>
+                            </RadioButton>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Speed" FontSize="10"
+                                       Margin="0,0,0,4"/>
+                            <RadioButton GroupName="OverviewSpeed" IsChecked="True">
+                                <TextBlock Text="Slow" FontSize="11"/>
+                            </RadioButton>
+                            <RadioButton GroupName="OverviewSpeed">
+                                <TextBlock Text="Normal" FontSize="11"/>
+                            </RadioButton>
+                            <RadioButton GroupName="OverviewSpeed">
+                                <TextBlock Text="Fast" FontSize="11"/>
+                            </RadioButton>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Markdown Preview -->
+            <Border Width="210" Height="170"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,0,12">
+                <StackPanel>
+                    <TextBlock Text="Markdown Preview"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,6"/>
+                    <Markdown Height="130"
+                              Text="# Jalium.UI&#10;Render rich docs directly.&#10;- Native parsing&#10;- Live inline editor&#10;- Tables, task lists"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Razor Syntax (live @{ for } loop) -->
+            <Border Width="210" Height="140"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12">
+                <StackPanel>
+                    <TextBlock Text="Razor Syntax"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,6"/>
+                    <TextBlock Text="@@{ for } generates these:"
+                               FontSize="10"
+                               FontFamily="Consolas"
+                               Margin="0,0,0,8"/>
+                    <WrapPanel>
+                        @{
+                            for (var i = 1; i <= 5; i++) {
+                                <Border Background="{DynamicResource GalleryAccent}"
+                                        CornerRadius="6"
+                                        Padding="8,3"
+                                        Margin="0,0,4,4">
+                                    <TextBlock Text="@(i.ToString())"
+                                               FontSize="11"
+                                               FontWeight="Bold"/>
+                                </Border>
+                            }
+                        }
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+
+        <!-- ============================================================== -->
+        <!--                       CENTER HERO                              -->
+        <!-- ============================================================== -->
+        <Border Grid.Row="1" Grid.Column="1"
+                Width="540" Height="430"
+                Background="{DynamicResource GalleryCardBackground}"
+                BorderBrush="{DynamicResource GalleryAccent}"
+                BorderThickness="1.5"
+                CornerRadius="22"
+                Padding="44,34,44,34"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <!-- Logo disc -->
+                <Border Width="72" Height="72"
+                        CornerRadius="36"
+                        Background="{DynamicResource GalleryAccent}"
+                        BorderBrush="{DynamicResource GalleryAccentLight}"
+                        BorderThickness="2"
+                        HorizontalAlignment="Center">
+                    <TextBlock Text="J"
+                               FontSize="42" FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                </Border>
+
+                <TextBlock Text="Jalium UI"
+                           FontSize="46" FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Margin="0,14,0,4"/>
+
+                <TextBlock Text="Modern  •  Fast  •  Beautiful  •  Cross-Platform"
+                           FontSize="13" FontWeight="SemiBold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,18"/>
+
+                <TextBlock Text="A control library with WPF-style ergonomics, a GPU-accelerated renderer, and a live showcase of every component."
+                           FontSize="12"
+                           TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           MaxWidth="400"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,24"/>
+
+                <Button x:Name="EnterButton"
+                        Content="Enter Gallery  →"
+                        Height="48" MinWidth="220"
+                        FontSize="15" FontWeight="Bold"
+                        Padding="28,0,28,0"
+                        HorizontalAlignment="Center"
+                        Click="OnEnterButtonClick"/>
+            </StackPanel>
+        </Border>
+
+        <!-- ============================================================== -->
+        <!--                    RIGHT COLUMN (4 cards)                      -->
+        <!-- ============================================================== -->
+        <StackPanel Grid.Row="1" Grid.Column="2"
+                    Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+
+            <!-- Drag & Drop -->
+            <Border Width="210" Height="115"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,0,10">
+                <StackPanel>
+                    <TextBlock Text="Drag &amp; Drop"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,8"/>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <Border Background="{DynamicResource GalleryAccent}"
+                                    CornerRadius="6" Padding="8,3" Margin="0,0,0,3">
+                                <TextBlock Text="Item A" FontSize="10"/>
+                            </Border>
+                            <Border Background="#38BDF8"
+                                    CornerRadius="6" Padding="8,3" Margin="0,0,0,3">
+                                <TextBlock Text="Item B" FontSize="10"/>
+                            </Border>
+                            <Border Background="#EF4444"
+                                    CornerRadius="6" Padding="8,3">
+                                <TextBlock Text="Item C" FontSize="10"/>
+                            </Border>
+                        </StackPanel>
+                        <Border Width="80" Height="70"
+                                Background="{DynamicResource GalleryCardInnerBackground}"
+                                BorderBrush="{DynamicResource GalleryBorderStrong}"
+                                BorderThickness="1.5"
+                                CornerRadius="8"
+                                AllowDrop="True"
+                                Margin="10,0,0,0">
+                            <TextBlock Text="Drop here"
+                                       FontSize="10"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- Sections & Layout -->
+            <Border Width="210" Height="115"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,0,10">
+                <StackPanel>
+                    <TextBlock Text="Sections &amp; Layout"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,6"/>
+                    <TextBlock Text="Reusable sections anywhere"
+                               FontSize="10"
+                               Margin="0,0,0,6"/>
+                    <Border Background="{DynamicResource GalleryAccent}"
+                            CornerRadius="6" Padding="8,3" Margin="0,0,0,3">
+                        <TextBlock Text="Jalium.UI" FontSize="10" FontWeight="SemiBold"/>
+                    </Border>
+                    <StackPanel Orientation="Horizontal">
+                        <Border Background="{DynamicResource GalleryCardInnerBackground}"
+                                CornerRadius="6" Padding="6,2" Margin="0,0,4,0">
+                            <TextBlock Text="Home" FontSize="10"/>
+                        </Border>
+                        <Border Background="{DynamicResource GalleryCardInnerBackground}"
+                                CornerRadius="6" Padding="6,2">
+                            <TextBlock Text="Settings" FontSize="10"/>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+
+            <!-- SuperEllipse Shape -->
+            <Border Width="210" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,0,10">
+                <StackPanel>
+                    <TextBlock Text="SuperEllipse Shape"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,8"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Border Width="44" Height="44"
+                                Shape="SuperEllipse" SuperEllipseN="2"
+                                Background="{DynamicResource GalleryAccent}"
+                                Margin="0,0,6,0"/>
+                        <Border Width="44" Height="44"
+                                Shape="SuperEllipse" SuperEllipseN="4"
+                                Background="#38BDF8"
+                                Margin="0,0,6,0"/>
+                        <Border Width="44" Height="44"
+                                Shape="SuperEllipse" SuperEllipseN="6"
+                                Background="#8BFAB0"/>
+                    </StackPanel>
+                    <TextBlock Text="N=2 · N=4 (iOS) · N=6"
+                               FontSize="9"
+                               HorizontalAlignment="Center"
+                               Margin="0,4,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Liquid Glass -->
+            <Border Width="210" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12">
+                <StackPanel>
+                    <TextBlock Text="Liquid Glass"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,6"/>
+                    <Grid Height="68">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Width="22" Height="22" Background="#FF6B6B"/>
+                                <Border Width="22" Height="22" Background="#4ECDC4"/>
+                                <Border Width="22" Height="22" Background="#FFEAA7"/>
+                                <Border Width="22" Height="22" Background="#8BFAB0"/>
+                                <Border Width="22" Height="22" Background="#38BDF8"/>
+                                <Border Width="22" Height="22" Background="#22C55E"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Width="22" Height="22" Background="#F59E0B"/>
+                                <Border Width="22" Height="22" Background="#EF4444"/>
+                                <Border Width="22" Height="22" Background="#5CF68F"/>
+                                <Border Width="22" Height="22" Background="#06B6D4"/>
+                                <Border Width="22" Height="22" Background="#84CC16"/>
+                                <Border Width="22" Height="22" Background="#48EC7F"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Border Width="22" Height="22" Background="#14B8A6"/>
+                                <Border Width="22" Height="22" Background="#F97316"/>
+                                <Border Width="22" Height="22" Background="#6366F1"/>
+                                <Border Width="22" Height="22" Background="#EAB308"/>
+                                <Border Width="22" Height="22" Background="#10B981"/>
+                                <Border Width="22" Height="22" Background="#46EF7E"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Border Margin="18,8,18,8"
+                                CornerRadius="12"
+                                LiquidGlass="True"
+                                LiquidGlassInteractive="True"
+                                Background="#200078D4">
+                            <TextBlock Text="Liquid Glass"
+                                       FontSize="11"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+
+        <!-- ============================================================== -->
+        <!--                      BOTTOM STRIP (6 cards)                    -->
+        <!-- ============================================================== -->
+        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="0,0,0,12">
+
+            <!-- Split Button -->
+            <Border Width="180" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Split Button"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,10"/>
+                    <SplitButton Content="Run" Height="32"
+                                 HorizontalAlignment="Stretch">
+                        <SplitButton.Flyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem Text="Jalium.UI.Controls"/>
+                                <MenuFlyoutItem Text="Jalium.UI.Core"/>
+                                <MenuFlyoutItem Text="Jalium.UI.Xaml"/>
+                            </MenuFlyout>
+                        </SplitButton.Flyout>
+                    </SplitButton>
+                </StackPanel>
+            </Border>
+
+            <!-- Switches -->
+            <Border Width="180" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Switches"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,6"/>
+                    <ToggleSwitch Header="Wi-Fi" IsOn="True"
+                                  OnContent="On" OffContent="Off"/>
+                    <ToggleSwitch Header="Dark Mode"
+                                  OnContent="On" OffContent="Off"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Sliders -->
+            <Border Width="180" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Sliders"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,10"/>
+                    <Slider Minimum="0" Maximum="100" Value="60" Height="20"/>
+                    <Slider Minimum="0" Maximum="100" Value="35" Height="20"/>
+                    <Slider Minimum="0" Maximum="100" Value="80" Height="20"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Progress -->
+            <Border Width="180" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Progress"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,10"/>
+                    <ProgressBar Value="28" Minimum="0" Maximum="100" Height="6"
+                                 Margin="0,0,0,8"/>
+                    <ProgressBar Value="52" Minimum="0" Maximum="100" Height="6"
+                                 Margin="0,0,0,8"/>
+                    <ProgressBar Value="75" Minimum="0" Maximum="100" Height="6"
+                                 Margin="0,0,0,8"/>
+                    <ProgressBar Value="100" Minimum="0" Maximum="100" Height="6"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Indeterminate -->
+            <Border Width="180" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12"
+                    Margin="0,0,10,0">
+                <StackPanel>
+                    <TextBlock Text="Indeterminate"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,12"/>
+                    <ProgressBar IsIndeterminate="True" Height="6"
+                                 Margin="0,0,0,12"/>
+                    <TextBlock Text="Streaming data..."
+                               FontSize="10"/>
+                </StackPanel>
+            </Border>
+
+            <!-- TextEffectPresenter -->
+            <Border Width="200" Height="120"
+                    Background="{DynamicResource GalleryCardBackground}"
+                    BorderBrush="{DynamicResource GalleryBorderSubtle}"
+                    BorderThickness="1"
+                    CornerRadius="12"
+                    Padding="12">
+                <StackPanel>
+                    <TextBlock Text="TextEffectPresenter"
+                               FontSize="12" FontWeight="SemiBold"
+                               Margin="0,0,0,4"/>
+                    <TextBlock Text="Per-character animated text"
+                               FontSize="10"
+                               Margin="0,0,0,8"/>
+                    <TextEffectPresenter Text="Type a lyric..."
+                                         FontSize="18"
+                                         FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="XamlUICommand"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="Custom commands defined with user-specified labels, icons, and keyboard accelerators for application-specific actions."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Custom XamlUICommand Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Custom XamlUICommand"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Application-specific commands with custom labels, icons, and wired to toolbar buttons."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border x:Name="XamlCommandContainer"
@@ -51,11 +47,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Command Output"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Click the command buttons to trigger actions. Output is displayed below."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -65,13 +59,11 @@
                         <TextBlock x:Name="CommandOutputText"
                                    Text="No command executed yet."
                                    FontSize="13"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    TextWrapping="Wrap"
                                    Margin="0,0,0,8"/>
                         <TextBlock x:Name="CommandHistoryText"
                                    Text=""
                                    FontSize="11"
-                                   Foreground="{DynamicResource GalleryTextMuted}"
                                    TextWrapping="Wrap"/>
                     </StackPanel>
                 </Border>
@@ -87,7 +79,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -113,7 +104,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

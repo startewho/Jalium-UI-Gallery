@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="AppBarToggleButton"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A toggle button designed for use in a CommandBar, supporting checked/unchecked states."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Text Formatting Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Text Formatting"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Toggle buttons for text formatting options like Bold, Italic, and Underline."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -57,7 +53,6 @@
                         <TextBlock x:Name="FormattingPreviewText"
                                    Text="Sample text with formatting"
                                    FontSize="16"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    Margin="0,4,0,0"/>
                     </StackPanel>
                 </Border>
@@ -74,11 +69,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Checked State"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Toggle buttons that display their IsChecked state."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -105,7 +98,6 @@
                         <TextBlock x:Name="CheckedStateText"
                                    Text="Wi-Fi: Off | Bluetooth: Off | Airplane Mode: Off"
                                    FontSize="12"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    Margin="0,4,0,0"/>
                     </StackPanel>
                 </Border>
@@ -121,7 +113,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -147,7 +138,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

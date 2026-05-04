@@ -16,7 +16,7 @@ public partial class StackPanelPage : Page
             <TextBlock Text=""Item 2"" Foreground=""#FFFFFF""
                        HorizontalAlignment=""Center"" VerticalAlignment=""Center""/>
         </Border>
-        <Border Background=""#881798"" Height=""40"">
+        <Border Background=""#179842"" Height=""40"">
             <TextBlock Text=""Item 3"" Foreground=""#FFFFFF""
                        HorizontalAlignment=""Center"" VerticalAlignment=""Center""/>
         </Border>
@@ -32,7 +32,7 @@ public partial class StackPanelPage : Page
             <TextBlock Text=""Center"" Foreground=""#FFFFFF""
                        HorizontalAlignment=""Center"" VerticalAlignment=""Center""/>
         </Border>
-        <Border Background=""#881798"" Width=""100"" Height=""60"">
+        <Border Background=""#179842"" Width=""100"" Height=""60"">
             <TextBlock Text=""Right"" Foreground=""#FFFFFF""
                        HorizontalAlignment=""Center"" VerticalAlignment=""Center""/>
         </Border>
@@ -76,7 +76,7 @@ public partial class StackPanelDemo : Page
         };
 
         // Add items dynamically
-        var colors = new[] { ""#0078D4"", ""#107C10"", ""#881798"", ""#CA5010"" };
+        var colors = new[] { ""#0078D4"", ""#107C10"", ""#179842"", ""#CA5010"" };
         for (int i = 0; i < colors.Length; i++)
         {
             var item = new Border

@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="PropertyGrid"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="Displays the properties of an object for viewing and editing, with categorized and alphabetical modes."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic Property Grid Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic Property Grid"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Inspect and edit the properties of a sample object with categorized view."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -55,11 +51,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Categorized vs Alphabetical"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Compare the two sort modes side by side on the same object."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -67,7 +61,7 @@
                         Padding="16">
                     <StackPanel Orientation="Horizontal">
                         <StackPanel Orientation="Vertical" Width="400" Margin="0,0,16,0">
-                            <TextBlock Text="Categorized:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                            <TextBlock Text="Categorized:" FontSize="12" Margin="0,0,0,4"/>
                             <PropertyGrid x:Name="CategorizedGrid"
                                           Height="300"
                                           SortMode="Categorized"
@@ -75,7 +69,7 @@
                                           ShowDescription="False"/>
                         </StackPanel>
                         <StackPanel Orientation="Vertical" Width="400">
-                            <TextBlock Text="Alphabetical:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                            <TextBlock Text="Alphabetical:" FontSize="12" Margin="0,0,0,4"/>
                             <PropertyGrid x:Name="AlphabeticalGrid"
                                           Height="300"
                                           SortMode="Alphabetical"
@@ -97,11 +91,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Custom Object"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A richer sample object with various property types including enums, collections, and nested objects."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -126,7 +118,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -152,7 +143,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

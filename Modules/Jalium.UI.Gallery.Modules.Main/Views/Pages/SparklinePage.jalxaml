@@ -6,12 +6,10 @@
     <StackPanel Orientation="Vertical">
         <TextBlock Text="Sparkline"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <TextBlock Text="A lightweight inline chart control for compact visualizations without axes or legends."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Line Sparklines -->
@@ -24,11 +22,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Line Sparklines"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Multiple sparklines using the Line type with high/low point markers."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border x:Name="LineSparklineContainer"
@@ -48,11 +44,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Bar &amp; Area"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Sparklines rendered as bar charts and area fills."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border x:Name="BarAreaContainer"
@@ -72,11 +66,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Win/Loss"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Win/Loss sparklines showing positive and negative outcomes."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border x:Name="WinLossContainer"
@@ -95,7 +87,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -121,7 +112,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

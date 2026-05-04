@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="JsonTreeViewer"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control that displays JSON data in an interactive tree view with search, expand/collapse, and path copying."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic JSON Tree Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic JSON Tree"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Display structured JSON data with color-coded types and expandable nodes."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -53,11 +49,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Search &amp; Filter"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Type in the search box to highlight matching keys and values in the tree."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -85,11 +79,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Enter JSON text on the left and see the tree view update on the right."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -97,7 +89,7 @@
                         Padding="16">
                     <StackPanel Orientation="Horizontal">
                         <StackPanel Orientation="Vertical" Width="400" Margin="0,0,16,0">
-                            <TextBlock Text="JSON Input:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                            <TextBlock Text="JSON Input:" FontSize="12" Margin="0,0,0,4"/>
                             <TextBox x:Name="JsonInput"
                                      AcceptsReturn="True"
                                      Height="350"
@@ -105,7 +97,7 @@
                                      FontSize="12"/>
                         </StackPanel>
                         <StackPanel Orientation="Vertical" Width="400">
-                            <TextBlock Text="Tree View:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                            <TextBlock Text="Tree View:" FontSize="12" Margin="0,0,0,4"/>
                             <JsonTreeViewer x:Name="InteractiveJsonTree"
                                             Height="350"
                                             ExpandDepth="3"/>
@@ -124,7 +116,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -150,7 +141,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

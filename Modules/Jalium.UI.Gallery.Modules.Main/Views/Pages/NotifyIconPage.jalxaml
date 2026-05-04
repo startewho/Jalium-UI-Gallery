@@ -8,13 +8,11 @@
             <!-- Page Title -->
             <TextBlock Text="NotifyIcon"
                        FontSize="32"
-                       Foreground="{DynamicResource GalleryTextPrimary}"
                        Margin="0,0,0,8"/>
 
             <!-- Description -->
             <TextBlock Text="Displays an icon in the system notification area (system tray). Supports tooltip text, balloon tips, context menus, and click events."
                        FontSize="14"
-                       Foreground="{DynamicResource GalleryTextTertiary}"
                        Margin="0,0,0,24"/>
 
             <!-- Basic NotifyIcon Card -->
@@ -27,11 +25,9 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="Basic Tray Icon"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,4"/>
                     <TextBlock Text="Show or hide an icon in the system tray with tooltip text."
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextMuted}"
                                Margin="0,0,0,16"/>
 
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -39,12 +35,12 @@
                             Padding="16">
                         <StackPanel Orientation="Vertical">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                                <TextBlock Text="Tooltip:" Width="80" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                                <TextBlock Text="Tooltip:" Width="80" VerticalAlignment="Center"/>
                                 <TextBox x:Name="TooltipBox" Text="Jalium.UI Gallery" Width="250" Height="28"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Button x:Name="ShowIconButton" Content="Show Icon" Width="100" Height="28" Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                                <Button x:Name="HideIconButton" Content="Hide Icon" Width="100" Height="28" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                <Button x:Name="ShowIconButton" Content="Show Icon" Width="100" Height="28" Margin="0,0,8,0"/>
+                                <Button x:Name="HideIconButton" Content="Hide Icon" Width="100" Height="28"/>
                             </StackPanel>
                         </StackPanel>
                     </Border>
@@ -61,11 +57,9 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="Balloon Tips"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,4"/>
                     <TextBlock Text="Show balloon tip notifications from the tray icon with different icon types."
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextMuted}"
                                Margin="0,0,0,16"/>
 
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -73,15 +67,15 @@
                             Padding="16">
                         <StackPanel Orientation="Vertical">
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                                <TextBlock Text="Title:" Width="80" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                                <TextBlock Text="Title:" Width="80" VerticalAlignment="Center"/>
                                 <TextBox x:Name="BalloonTitleBox" Text="Balloon Tip" Width="250" Height="28"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                                <TextBlock Text="Text:" Width="80" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                                <TextBlock Text="Text:" Width="80" VerticalAlignment="Center"/>
                                 <TextBox x:Name="BalloonTextBox" Text="This is a balloon tip from the tray." Width="250" Height="28"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                                <TextBlock Text="Icon:" Width="80" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                                <TextBlock Text="Icon:" Width="80" VerticalAlignment="Center"/>
                                 <ComboBox x:Name="BalloonIconComboBox" Width="150" Height="28">
                                     <ComboBoxItem Content="None"/>
                                     <ComboBoxItem Content="Info" IsSelected="True"/>
@@ -90,11 +84,11 @@
                                 </ComboBox>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                                <TextBlock Text="Timeout:" Width="80" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                                <TextBlock Text="Timeout:" Width="80" VerticalAlignment="Center"/>
                                 <Slider x:Name="BalloonTimeoutSlider" Minimum="1" Maximum="30" Value="5" Width="150" Margin="0,0,8,0"/>
-                                <TextBlock x:Name="BalloonTimeoutText" Text="5s" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="BalloonTimeoutText" Text="5s" VerticalAlignment="Center"/>
                             </StackPanel>
-                            <Button x:Name="ShowBalloonButton" Content="Show Balloon Tip" Width="140" Height="28" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Button x:Name="ShowBalloonButton" Content="Show Balloon Tip" Width="140" Height="28"/>
                         </StackPanel>
                     </Border>
                 </StackPanel>
@@ -110,28 +104,25 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="Events"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,4"/>
                     <TextBlock Text="NotifyIcon raises events for click, double-click, and balloon tip interactions."
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextMuted}"
                                Margin="0,0,0,16"/>
 
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"
                             Padding="16">
                         <StackPanel Orientation="Vertical">
-                            <TextBlock Text="Event Log:" Foreground="{DynamicResource GalleryTextTertiary}" Margin="0,0,0,8"/>
+                            <TextBlock Text="Event Log:" Margin="0,0,0,8"/>
                             <Border Background="#111111" CornerRadius="8" Padding="8" Height="120">
                                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                                     <TextBlock x:Name="EventLogText"
                                                Text="Interact with the tray icon to see events..."
-                                               Foreground="{DynamicResource GalleryTextMuted}"
                                                FontSize="12"
                                                TextWrapping="Wrap"/>
                                 </ScrollViewer>
                             </Border>
-                            <Button x:Name="ClearLogButton" Content="Clear Log" Width="100" Height="24" Margin="0,8,0,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Button x:Name="ClearLogButton" Content="Clear Log" Width="100" Height="24" Margin="0,8,0,0"/>
                         </StackPanel>
                     </Border>
                 </StackPanel>
@@ -147,20 +138,17 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="Context Menu"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,4"/>
                     <TextBlock Text="Assign a ContextMenu to the tray icon. Right-click the tray icon to see the menu."
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextMuted}"
                                Margin="0,0,0,16"/>
 
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"
                             Padding="16">
                         <StackPanel Orientation="Vertical">
-                            <CheckBox x:Name="EnableContextMenuCheckBox" Content="Enable context menu on tray icon" IsChecked="True" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <CheckBox x:Name="EnableContextMenuCheckBox" Content="Enable context menu on tray icon" IsChecked="True" Margin="0,0,0,8"/>
                             <TextBlock Text="The context menu includes: Show Window, Settings, About, Exit"
-                                       Foreground="{DynamicResource GalleryTextMuted}"
                                        FontSize="12"/>
                         </StackPanel>
                     </Border>
@@ -177,7 +165,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="XAML Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"
@@ -203,7 +190,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="C# Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"

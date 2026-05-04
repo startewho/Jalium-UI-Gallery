@@ -15,17 +15,17 @@
                     <TextBlock Text="Interactive Demo" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,16" />
 
                     <StackPanel Orientation="Vertical">
-                        <HyperlinkButton Content="Visit Microsoft" NavigateUri="https://www.microsoft.com" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                        <HyperlinkButton Content="Open GitHub" NavigateUri="https://www.github.com" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                        <HyperlinkButton Content="Learn More" IsUnderlined="False" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                        <HyperlinkButton Content="Visit Microsoft" NavigateUri="https://www.microsoft.com" Margin="0,0,0,8"/>
+                        <HyperlinkButton Content="Open GitHub" NavigateUri="https://www.github.com" Margin="0,0,0,8"/>
+                        <HyperlinkButton Content="Learn More" IsUnderlined="False" Margin="0,0,0,8"/>
                     </StackPanel>
 
                     <TextBlock Text="In paragraph context:" Margin="0,16,0,8" />
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="For more information, " VerticalAlignment="Center" />
-                        <HyperlinkButton Content="click here" VerticalAlignment="Center" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                        <HyperlinkButton Content="click here" VerticalAlignment="Center"/>
                         <TextBlock Text=" or visit our " VerticalAlignment="Center" />
-                        <HyperlinkButton Content="documentation" VerticalAlignment="Center" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                        <HyperlinkButton Content="documentation" VerticalAlignment="Center"/>
                         <TextBlock Text="." VerticalAlignment="Center" />
                     </StackPanel>
                 </StackPanel>
@@ -52,7 +52,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="XAML Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"
@@ -78,7 +77,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="C# Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"

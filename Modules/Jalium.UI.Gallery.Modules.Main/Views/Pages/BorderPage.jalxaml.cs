@@ -45,7 +45,7 @@ public partial class BorderPage : Page
     </Border>
 
     <!-- Non-uniform Border Thickness -->
-    <Border BorderBrush=""#881798""
+    <Border BorderBrush=""#179842""
             BorderThickness=""0,0,0,3""
             Padding=""12,8""
             Width=""200""

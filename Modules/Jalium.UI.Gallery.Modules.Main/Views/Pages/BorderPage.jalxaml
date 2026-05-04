@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Border"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A decorator that draws a border, background, or both around its child."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic Border Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic Border"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Border with background and border brush."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -40,7 +36,7 @@
                         <Border Width="100" Height="80"
                                 Background="{DynamicResource GalleryAccent}"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="Background" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="Background"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"
                                        FontSize="12"/>
                         </Border>
@@ -48,7 +44,7 @@
                                 BorderBrush="{DynamicResource GalleryAccent}"
                                 BorderThickness="2"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="Border Only" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="Border Only"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"
                                        FontSize="12"/>
                         </Border>
@@ -56,7 +52,7 @@
                                 Background="#1E3A5F"
                                 BorderBrush="{DynamicResource GalleryAccent}"
                                 BorderThickness="2">
-                            <TextBlock Text="Both" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="Both"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"
                                        FontSize="12"/>
                         </Border>
@@ -75,11 +71,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Corner Radius"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Different corner radius values."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -90,27 +84,27 @@
                                 Background="#22C55E"
                                 CornerRadius="0"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="0" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="0"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <Border Width="80" Height="80"
                                 Background="#22C55E"
                                 CornerRadius="14"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="8" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="8"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <Border Width="80" Height="80"
                                 Background="#22C55E"
                                 CornerRadius="16"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="16" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="16"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <Border Width="80" Height="80"
                                 Background="#22C55E"
                                 CornerRadius="40">
-                            <TextBlock Text="40" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="40"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </StackPanel>
@@ -128,11 +122,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Border Thickness"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Different border thickness values."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -140,34 +132,34 @@
                         Padding="16">
                     <StackPanel Orientation="Horizontal">
                         <Border Width="80" Height="80"
-                                BorderBrush="#881798"
+                                BorderBrush="#179842"
                                 BorderThickness="1"
                                 CornerRadius="8"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="1px" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="1px"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <Border Width="80" Height="80"
-                                BorderBrush="#881798"
+                                BorderBrush="#179842"
                                 BorderThickness="2"
                                 CornerRadius="8"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="2px" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="2px"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <Border Width="80" Height="80"
-                                BorderBrush="#881798"
+                                BorderBrush="#179842"
                                 BorderThickness="4"
                                 CornerRadius="8"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="4px" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="4px"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                         <Border Width="80" Height="80"
-                                BorderBrush="#881798"
+                                BorderBrush="#179842"
                                 BorderThickness="8"
                                 CornerRadius="8">
-                            <TextBlock Text="8px" Foreground="{DynamicResource GalleryTextPrimary}"
+                            <TextBlock Text="8px"
                                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </StackPanel>
@@ -185,11 +177,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Padding"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Different padding values for content spacing."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -202,7 +192,7 @@
                                 CornerRadius="8"
                                 Padding="4"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="4px" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="12"/>
+                            <TextBlock Text="4px" FontSize="12"/>
                         </Border>
                         <Border Background="#CA5010"
                                 BorderBrush="#FFFFFF"
@@ -210,7 +200,7 @@
                                 CornerRadius="8"
                                 Padding="8"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="8px" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="12"/>
+                            <TextBlock Text="8px" FontSize="12"/>
                         </Border>
                         <Border Background="#CA5010"
                                 BorderBrush="#FFFFFF"
@@ -218,14 +208,14 @@
                                 CornerRadius="8"
                                 Padding="16"
                                 Margin="0,0,12,0">
-                            <TextBlock Text="16px" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="12"/>
+                            <TextBlock Text="16px" FontSize="12"/>
                         </Border>
                         <Border Background="#CA5010"
                                 BorderBrush="#FFFFFF"
                                 BorderThickness="1"
                                 CornerRadius="8"
                                 Padding="24">
-                            <TextBlock Text="24px" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="12"/>
+                            <TextBlock Text="24px" FontSize="12"/>
                         </Border>
                     </StackPanel>
                 </Border>
@@ -241,7 +231,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -267,7 +256,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

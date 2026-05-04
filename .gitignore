@@ -432,3 +432,6 @@ FodyWeavers.xsd
 
 # Local build/scratch scripts
 .tmp-build/
+
+# Language Server / IDE per-project cache
+*.lscache

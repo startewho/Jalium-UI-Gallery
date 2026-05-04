@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Shapes"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="Basic geometric shapes for drawing graphics."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Rectangle Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Rectangle"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A basic rectangular shape with optional rounded corners."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -56,11 +52,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Ellipse"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="An elliptical shape that can be a circle when width equals height."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -70,7 +64,7 @@
                         <Ellipse Width="60" Height="60" Fill="{DynamicResource GalleryAccent}" Margin="0,0,16,0"/>
                         <Ellipse Width="100" Height="60" Fill="#00CC6A" Margin="0,0,16,0"/>
                         <Ellipse Width="60" Height="60" Fill="Transparent" Stroke="#F7630C" StrokeThickness="3" Margin="0,0,16,0"/>
-                        <Ellipse Width="80" Height="80" Fill="#886CE4" Stroke="#FFFFFF" StrokeThickness="2"/>
+                        <Ellipse Width="80" Height="80" Fill="#6CE494" Stroke="#FFFFFF" StrokeThickness="2"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -86,11 +80,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Line"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A straight line between two points."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -116,11 +108,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Polygon"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A closed shape consisting of a series of connected lines."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -152,11 +142,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Polyline"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A series of connected line segments (not closed)."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -183,11 +171,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Path"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Complex shapes using path geometry data."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -219,11 +205,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Combined Shapes Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Shapes can be combined to create complex graphics."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -255,7 +239,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -281,7 +264,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

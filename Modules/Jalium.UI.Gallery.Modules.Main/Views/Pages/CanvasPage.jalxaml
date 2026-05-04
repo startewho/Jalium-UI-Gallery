@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Canvas"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A panel that positions children using absolute coordinates."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Canvas Overview Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Canvas Overview"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Elements positioned with Canvas.Left and Canvas.Top."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -39,19 +35,18 @@
                         Height="200">
                     <!-- Visual representation of Canvas positioning -->
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Canvas allows absolute positioning of elements."
-                                   Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,16"/>
+                        <TextBlock Text="Canvas allows absolute positioning of elements." FontSize="12" Margin="0,0,0,16"/>
                         <StackPanel Orientation="Horizontal">
                             <Border Background="{DynamicResource GalleryAccent}" Width="60" Height="60" Margin="0,0,8,0">
-                                <TextBlock Text="(0,0)" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="10"
+                                <TextBlock Text="(0,0)" FontSize="10"
                                            HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Border>
                             <Border Background="#22C55E" Width="60" Height="60" Margin="40,20,8,0">
-                                <TextBlock Text="(100,50)" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="10"
+                                <TextBlock Text="(100,50)" FontSize="10"
                                            HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Border>
-                            <Border Background="#881798" Width="60" Height="60" Margin="20,40,0,0">
-                                <TextBlock Text="(200,80)" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="10"
+                            <Border Background="#179842" Width="60" Height="60" Margin="20,40,0,0">
+                                <TextBlock Text="(200,80)" FontSize="10"
                                            HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Border>
                         </StackPanel>
@@ -70,11 +65,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Canvas Features"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Key capabilities of the Canvas control."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -84,32 +77,27 @@
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
                             <Border Width="8" Height="8" Background="{DynamicResource GalleryAccent}" CornerRadius="8" Margin="0,0,8,0"
                                     VerticalAlignment="Center"/>
-                            <TextBlock Text="Canvas.Left - Distance from left edge"
-                                       Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <TextBlock Text="Canvas.Left - Distance from left edge" FontSize="14"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
                             <Border Width="8" Height="8" Background="#22C55E" CornerRadius="8" Margin="0,0,8,0"
                                     VerticalAlignment="Center"/>
-                            <TextBlock Text="Canvas.Top - Distance from top edge"
-                                       Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <TextBlock Text="Canvas.Top - Distance from top edge" FontSize="14"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
-                            <Border Width="8" Height="8" Background="#881798" CornerRadius="8" Margin="0,0,8,0"
+                            <Border Width="8" Height="8" Background="#179842" CornerRadius="8" Margin="0,0,8,0"
                                     VerticalAlignment="Center"/>
-                            <TextBlock Text="Canvas.Right - Distance from right edge"
-                                       Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <TextBlock Text="Canvas.Right - Distance from right edge" FontSize="14"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
                             <Border Width="8" Height="8" Background="#CA5010" CornerRadius="8" Margin="0,0,8,0"
                                     VerticalAlignment="Center"/>
-                            <TextBlock Text="Canvas.Bottom - Distance from bottom edge"
-                                       Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <TextBlock Text="Canvas.Bottom - Distance from bottom edge" FontSize="14"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <Border Width="8" Height="8" Background="#008272" CornerRadius="8" Margin="0,0,8,0"
                                     VerticalAlignment="Center"/>
-                            <TextBlock Text="Panel.ZIndex - Controls layering order"
-                                       Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <TextBlock Text="Panel.ZIndex - Controls layering order" FontSize="14"/>
                         </StackPanel>
                     </StackPanel>
                 </Border>
@@ -126,7 +114,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -152,7 +139,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

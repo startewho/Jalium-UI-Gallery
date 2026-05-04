@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="RichTextBox"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control for editing rich text documents with formatting."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic RichTextBox Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic RichTextBox"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A rich text editor for formatted text."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -51,21 +47,19 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="RichTextBox with Formatting Toolbar"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Common text editor with formatting options."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="8">
                     <StackPanel Orientation="Vertical">
-                        <ToolBar Background="Transparent" Margin="0,0,0,8">
-                            <Button x:Name="BoldButton" Content="B" Width="32" Height="28" FontWeight="Bold" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                            <Button x:Name="ItalicButton" Content="I" Width="32" Height="28" FontStyle="Italic" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                            <Button x:Name="UnderlineButton" Content="U" Width="32" Height="28" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                        <ToolBar Margin="0,0,0,8">
+                            <Button x:Name="BoldButton" Content="B" Width="32" Height="28" FontWeight="Bold"/>
+                            <Button x:Name="ItalicButton" Content="I" Width="32" Height="28" FontStyle="Italic"/>
+                            <Button x:Name="UnderlineButton" Content="U" Width="32" Height="28"/>
                             <Separator/>
                             <ComboBox Width="120" Height="28">
                                 <ComboBoxItem Content="Arial"/>
@@ -83,7 +77,7 @@
                                 <ComboBoxItem Content="24"/>
                             </ComboBox>
                             <Separator/>
-                            <Button Content="Color" Width="50" Height="28" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Button Content="Color" Width="50" Height="28"/>
                         </ToolBar>
                         <RichTextBox x:Name="FormattedRichTextBox" Width="500" Height="200"/>
                     </StackPanel>
@@ -101,11 +95,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Read-Only Mode"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="RichTextBox can be used to display read-only formatted content."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -126,22 +118,20 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Common Use Cases"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="RichTextBox is useful for various scenarios."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="• Document editing" Foreground="{DynamicResource GalleryTextSecondary}" Margin="0,0,0,8"/>
-                        <TextBlock Text="• Email composition" Foreground="{DynamicResource GalleryTextSecondary}" Margin="0,0,0,8"/>
-                        <TextBlock Text="• Note-taking applications" Foreground="{DynamicResource GalleryTextSecondary}" Margin="0,0,0,8"/>
-                        <TextBlock Text="• Content management systems" Foreground="{DynamicResource GalleryTextSecondary}" Margin="0,0,0,8"/>
-                        <TextBlock Text="• Report generators" Foreground="{DynamicResource GalleryTextSecondary}"/>
+                        <TextBlock Text="• Document editing" Margin="0,0,0,8"/>
+                        <TextBlock Text="• Email composition" Margin="0,0,0,8"/>
+                        <TextBlock Text="• Note-taking applications" Margin="0,0,0,8"/>
+                        <TextBlock Text="• Content management systems" Margin="0,0,0,8"/>
+                        <TextBlock Text="• Report generators"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -156,7 +146,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -182,7 +171,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

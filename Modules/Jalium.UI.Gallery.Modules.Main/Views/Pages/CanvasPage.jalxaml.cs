@@ -30,7 +30,7 @@ public partial class CanvasPage : Page
     <!-- Use Canvas.Right and Canvas.Bottom for right/bottom anchoring -->
     <Border Canvas.Right=""20"" Canvas.Bottom=""20""
             Width=""90"" Height=""60""
-            Background=""#881798"" CornerRadius=""4"">
+            Background=""#179842"" CornerRadius=""4"">
         <TextBlock Text=""Bottom-Right""
                    Foreground=""#FFFFFF""
                    HorizontalAlignment=""Center""

@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="TextBlock"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A lightweight control for displaying text."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic TextBlock Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic TextBlock"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Simple text display with default styling."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -38,10 +34,8 @@
                         Padding="16">
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="This is a basic TextBlock"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    Margin="0,0,0,8"/>
-                        <TextBlock Text="TextBlock displays read-only text content"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"/>
+                        <TextBlock Text="TextBlock displays read-only text content"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -57,11 +51,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Font Sizes"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Different font size variations."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -70,23 +62,18 @@
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="Caption (12px)"
                                    FontSize="12"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="Body (14px)"
                                    FontSize="14"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="Subtitle (18px)"
                                    FontSize="18"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="Title (24px)"
                                    FontSize="24"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="Display (32px)"
-                                   FontSize="32"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                   FontSize="32"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -102,11 +89,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Text Wrapping"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Long text with wrapping enabled."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -114,7 +99,6 @@
                         Padding="16">
                     <TextBlock Text="This is a longer piece of text that demonstrates how TextBlock handles text wrapping. When the text exceeds the available width, it automatically wraps to the next line, ensuring all content remains visible and readable."
                                FontSize="14"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                TextWrapping="Wrap"
                                Width="400"/>
                 </Border>
@@ -130,7 +114,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -156,7 +139,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

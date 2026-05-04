@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="TextEffectPresenter"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="Per-character animated text surface for lyrics, subtitles, notifications, and playful UI."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    TextWrapping="Wrap"
                    Margin="0,0,0,24"/>
 
@@ -27,11 +25,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Mutation API"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Each button triggers a call on the presenter — new graphemes enter, existing ones shift or dissipate."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            TextWrapping="Wrap"
                            Margin="0,0,0,16"/>
 
@@ -83,11 +79,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Built-in Effects"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Swap the per-cell animation driver. Each button re-enters the text so you see the full enter animation."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            TextWrapping="Wrap"
                            Margin="0,0,0,16"/>
 
@@ -127,11 +121,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Composition with UIElement.Effect"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="The per-cell animation (TextEffect) runs first on CPU, then the whole surface goes through a GPU pixel-shader pass (UIElement.Effect). Toggle a BlurEffect on top to see the two layers compose."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            TextWrapping="Wrap"
                            Margin="0,0,0,16"/>
 
@@ -165,7 +157,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -191,7 +182,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
