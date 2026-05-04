@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Drag &amp; Drop"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="Demonstrates DragEnter, DragOver, DragLeave, and Drop events using the AllowDrop property."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic Drag and Drop Demo -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic Drag &amp; Drop"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Drag items from the source list on the left and drop them into the target area on the right."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -41,7 +37,6 @@
                         <StackPanel Orientation="Vertical" Width="200" Margin="0,0,16,0">
                             <TextBlock Text="Drag Source"
                                        FontSize="13"
-                                       Foreground="{DynamicResource GalleryTextTertiary}"
                                        Margin="0,0,0,8"/>
                             <Border x:Name="DragItem1"
                                     Background="{DynamicResource GalleryAccent}"
@@ -50,7 +45,6 @@
                                     Margin="0,0,0,6"
                                     Cursor="Hand">
                                 <TextBlock Text="Item A"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="13"/>
                             </Border>
                             <Border x:Name="DragItem2"
@@ -60,7 +54,6 @@
                                     Margin="0,0,0,6"
                                     Cursor="Hand">
                                 <TextBlock Text="Item B"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="13"/>
                             </Border>
                             <Border x:Name="DragItem3"
@@ -70,7 +63,6 @@
                                     Margin="0,0,0,6"
                                     Cursor="Hand">
                                 <TextBlock Text="Item C"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="13"/>
                             </Border>
                         </StackPanel>
@@ -89,7 +81,6 @@
                                 <TextBlock x:Name="DropTargetHint"
                                            Text="Drop items here"
                                            FontSize="14"
-                                           Foreground="#52525B"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
                                            Margin="0,0,0,8"/>
@@ -112,11 +103,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="DragEnter / DragLeave Feedback"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Drag an item over the zones below to see visual feedback on DragEnter and DragLeave."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -132,7 +121,6 @@
                                 Cursor="Hand"
                                 HorizontalAlignment="Left">
                             <TextBlock Text="Drag me over the zones"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontSize="13"/>
                         </Border>
 
@@ -149,7 +137,6 @@
                                 <TextBlock x:Name="FeedbackZone1Text"
                                            Text="Zone 1"
                                            FontSize="14"
-                                           Foreground="#52525B"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
                             </Border>
@@ -165,7 +152,6 @@
                                 <TextBlock x:Name="FeedbackZone2Text"
                                            Text="Zone 2"
                                            FontSize="14"
-                                           Foreground="#52525B"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
                             </Border>
@@ -180,7 +166,6 @@
                                 <TextBlock x:Name="FeedbackZone3Text"
                                            Text="Zone 3"
                                            FontSize="14"
-                                           Foreground="#52525B"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
                             </Border>
@@ -200,18 +185,16 @@
             <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,4">
                     <TextBlock Text="Event Log"
-                               FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"/>
+                               FontSize="16"/>
                     <Button x:Name="ClearLogButton"
                             Content="Clear"
                             Height="24"
                             FontSize="11"
                             Margin="12,0,0,0"
-                            VerticalAlignment="Center" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            VerticalAlignment="Center"/>
                 </StackPanel>
                 <TextBlock Text="Shows DragEnter, DragOver, DragLeave, and Drop events as they fire."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,12"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -223,7 +206,6 @@
                         <TextBlock x:Name="EventLogText"
                                    Text="(drag items to see events)"
                                    FontSize="12"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontFamily="Consolas"
                                    TextWrapping="Wrap"/>
                     </ScrollViewer>
@@ -240,7 +222,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -266,7 +247,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

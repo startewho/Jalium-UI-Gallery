@@ -18,7 +18,7 @@ public partial class TreeMapPage : Page
         <TreeMapItem Label=""Healthcare"" Value=""210"" Brush=""#4CAF50""/>
         <TreeMapItem Label=""Finance""    Value=""180"" Brush=""#FFC107""/>
         <TreeMapItem Label=""Energy""     Value=""140"" Brush=""#E0593E""/>
-        <TreeMapItem Label=""Consumer""   Value=""120"" Brush=""#9C5FC4""/>
+        <TreeMapItem Label=""Consumer""   Value=""120"" Brush=""#5FC481""/>
     </TreeMap.Items>
 </TreeMap>
 

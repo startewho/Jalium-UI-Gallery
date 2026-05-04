@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="SplitButton"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control with a primary action and a drop-down button that opens a Flyout."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic SplitButton Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic SplitButton"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Primary click runs the action. Drop-down selects the target."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -41,7 +37,7 @@
                                      Content="Run"
                                      Width="180"
                                      Height="36"
-                                     Click="OnRunSplitButtonClick" Foreground="{DynamicResource GalleryTextPrimary}">
+                                     Click="OnRunSplitButtonClick">
                             <SplitButton.Flyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Jalium.UI.Controls" Click="OnRunTargetClick"/>
@@ -54,7 +50,6 @@
                         <TextBlock x:Name="RunStatusText"
                                    Text="Selected target: Jalium.UI.Controls"
                                    FontSize="13"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    Margin="0,12,0,0"/>
                     </StackPanel>
                 </Border>
@@ -71,11 +66,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Command + Flyout"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Demonstrates Command/CommandParameter and programmatic flyout state."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -86,7 +79,7 @@
                                      Content="Build"
                                      Width="180"
                                      Height="36"
-                                     Margin="0,0,0,12" Foreground="{DynamicResource GalleryTextPrimary}">
+                                     Margin="0,0,0,12">
                             <SplitButton.Flyout>
                                 <MenuFlyout>
                                     <MenuFlyoutItem Text="Build Debug" Click="OnBuildMenuItemClick"/>
@@ -100,17 +93,16 @@
                                     Width="110"
                                     Height="32"
                                     Margin="0,0,8,0"
-                                    Click="OnOpenBuildFlyoutClick" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                    Click="OnOpenBuildFlyoutClick"/>
                             <Button Content="Close Flyout"
                                     Width="110"
                                     Height="32"
-                                    Click="OnCloseBuildFlyoutClick" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                    Click="OnCloseBuildFlyoutClick"/>
                         </StackPanel>
 
                         <TextBlock x:Name="BuildStatusText"
                                    Text="Ready."
-                                   FontSize="13"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"/>
+                                   FontSize="13"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -125,7 +117,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -151,7 +142,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

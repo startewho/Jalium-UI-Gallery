@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="CheckBox"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control that a user can select and clear."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Interactive Demo Card -->
@@ -26,23 +24,20 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Click the checkbox to toggle its state."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <CheckBox x:Name="DemoCheckBox" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}">
-                            <TextBlock Text="I agree to the terms" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                        <CheckBox x:Name="DemoCheckBox" Margin="0,0,0,8">
+                            <TextBlock Text="I agree to the terms" FontSize="14"/>
                         </CheckBox>
                         <TextBlock x:Name="CheckBoxStatus"
                                    Text="Status: Unchecked"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"/>
                     </StackPanel>
                 </Border>
@@ -59,25 +54,23 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic CheckBoxes"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Standard checkbox controls with different states."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <CheckBox Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}">
-                            <TextBlock Text="Option 1" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                        <CheckBox Margin="0,0,0,8">
+                            <TextBlock Text="Option 1" FontSize="14"/>
                         </CheckBox>
-                        <CheckBox IsChecked="True" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}">
-                            <TextBlock Text="Option 2 (checked)" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                        <CheckBox IsChecked="True" Margin="0,0,0,8">
+                            <TextBlock Text="Option 2 (checked)" FontSize="14"/>
                         </CheckBox>
-                        <CheckBox IsEnabled="False" Foreground="{DynamicResource GalleryTextPrimary}">
-                            <TextBlock Text="Disabled option" Foreground="{DynamicResource GalleryTextMuted}" FontSize="14"/>
+                        <CheckBox IsEnabled="False">
+                            <TextBlock Text="Disabled option" FontSize="14"/>
                         </CheckBox>
                     </StackPanel>
                 </Border>
@@ -94,23 +87,20 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Three-State CheckBox"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A checkbox that supports indeterminate state."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <CheckBox x:Name="ThreeStateCheckBox" IsThreeState="True" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}">
-                            <TextBlock Text="Three-state checkbox" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                        <CheckBox x:Name="ThreeStateCheckBox" IsThreeState="True" Margin="0,0,0,8">
+                            <TextBlock Text="Three-state checkbox" FontSize="14"/>
                         </CheckBox>
                         <TextBlock x:Name="ThreeStateStatus"
                                    Text="Status: Indeterminate"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"/>
                     </StackPanel>
                 </Border>
@@ -126,7 +116,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -152,7 +141,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

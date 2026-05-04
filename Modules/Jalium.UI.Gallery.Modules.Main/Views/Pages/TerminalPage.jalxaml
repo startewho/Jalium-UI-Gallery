@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Terminal"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A terminal emulator control with VT100/ANSI escape sequence support, shell process integration, and full keyboard/IME input."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Interactive Terminal Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Terminal"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A fully functional shell terminal. Type commands and interact with the system shell."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="#0C0C0C"
@@ -52,12 +48,10 @@
                     <TextBlock x:Name="TitleText"
                                Text="Terminal"
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextTertiary}"
                                Margin="0,0,16,0"/>
                     <TextBlock x:Name="ProcessStatusText"
                                Text="Running"
-                               FontSize="12"
-                               Foreground="{DynamicResource GalleryTextTertiary}"/>
+                               FontSize="12"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -72,13 +66,11 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Options"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
                     <TextBlock Text="Cursor Style:"
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextSecondary}"
                                VerticalAlignment="Center"
                                Margin="0,0,12,0"/>
                     <ComboBox x:Name="CursorStyleComboBox"
@@ -92,7 +84,6 @@
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
                     <TextBlock Text="Font Size:"
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextSecondary}"
                                VerticalAlignment="Center"
                                Margin="0,0,12,0"/>
                     <Slider x:Name="FontSizeSlider"
@@ -104,7 +95,6 @@
                     <TextBlock x:Name="FontSizeLabel"
                                Text="14"
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextSecondary}"
                                VerticalAlignment="Center"
                                Margin="8,0,0,0"/>
                 </StackPanel>
@@ -112,15 +102,15 @@
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
                     <Button x:Name="ClearButton"
                             Content="Clear Terminal"
-                            Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Margin="0,0,8,0"/>
                     <Button x:Name="CopyButton"
                             Content="Copy Selection"
-                            Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Margin="0,0,8,0"/>
                     <Button x:Name="PasteButton"
                             Content="Paste"
-                            Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Margin="0,0,8,0"/>
                     <Button x:Name="RestartButton"
-                            Content="Restart Shell" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Content="Restart Shell"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -135,11 +125,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Programmatic Output"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Write text directly to a terminal control using ANSI escape sequences."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="#0C0C0C"
@@ -159,12 +147,12 @@
                 <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
                     <Button x:Name="AnsiColorsButton"
                             Content="Show ANSI Colors"
-                            Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Margin="0,0,8,0"/>
                     <Button x:Name="AnsiStylesButton"
                             Content="Show Text Styles"
-                            Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Margin="0,0,8,0"/>
                     <Button x:Name="ClearDemoButton"
-                            Content="Clear" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Content="Clear"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -178,7 +166,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -204,7 +191,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

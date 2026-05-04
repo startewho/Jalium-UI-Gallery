@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Content Transitions"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="TransitioningContentControl plays animations when its content changes. Select a transition mode and click Switch Content to see the effect."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Controls Card -->
@@ -26,12 +24,10 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Transition Settings"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,12"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                     <TextBlock Text="Transition Mode:"
-                               Foreground="{DynamicResource GalleryTextSecondary}"
                                FontSize="14"
                                VerticalAlignment="Center"
                                Margin="0,0,12,0"/>
@@ -45,11 +41,11 @@
                             Content="Switch Content"
                             Width="140"
                             Height="32"
-                            Margin="0,0,12,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Margin="0,0,12,0"/>
                     <Button x:Name="AutoPlayButton"
                             Content="Auto Play All"
                             Width="140"
-                            Height="32" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            Height="32"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -65,7 +61,6 @@
                 <TextBlock x:Name="CurrentTransitionText"
                            Text="Current: Crossfade"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,12"/>
 
                 <Border Background="#1A1A1A"
@@ -88,7 +83,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -114,7 +108,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

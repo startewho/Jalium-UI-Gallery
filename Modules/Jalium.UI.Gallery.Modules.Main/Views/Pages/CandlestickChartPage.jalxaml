@@ -6,12 +6,10 @@
     <StackPanel Orientation="Vertical">
         <TextBlock Text="CandlestickChart"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <TextBlock Text="Displays financial OHLC data as candlesticks with optional volume bars and moving average overlays."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic Candlestick -->
@@ -24,11 +22,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic Candlestick"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A candlestick chart with simulated OHLC price data."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border x:Name="BasicCandlestickContainer"
@@ -48,11 +44,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="With Volume"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A candlestick chart with a volume sub-chart below the price data."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border x:Name="VolumeContainer"
@@ -72,11 +66,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Moving Averages"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A candlestick chart with SMA and EMA overlay lines."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border x:Name="MovingAverageContainer"
@@ -95,7 +87,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -121,7 +112,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

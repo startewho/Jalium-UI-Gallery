@@ -6,12 +6,10 @@
     <StackPanel Orientation="Vertical">
         <TextBlock Text="Markdown"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <TextBlock Text="Render rich Markdown documents with headings, lists, tables, code fences, and relative links."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <Border Background="{DynamicResource GalleryCardBackground}"
@@ -23,11 +21,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Preview"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Switch between a few representative Markdown documents and see the rendered output update live."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -39,23 +35,22 @@
                                     Width="110"
                                     Height="32"
                                     Margin="0,0,8,8"
-                                    Click="OnDocsSampleClick" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                    Click="OnDocsSampleClick"/>
                             <Button Content="Release Notes"
                                     Width="110"
                                     Height="32"
                                     Margin="0,0,8,8"
-                                    Click="OnReleaseNotesClick" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                    Click="OnReleaseNotesClick"/>
                             <Button Content="Checklist"
                                     Width="110"
                                     Height="32"
                                     Margin="0,0,8,8"
-                                    Click="OnChecklistClick" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                    Click="OnChecklistClick"/>
                         </WrapPanel>
 
                         <TextBlock x:Name="PreviewStatusText"
                                    Text="Showing: Docs Sample"
                                    FontSize="13"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    Margin="0,4,0,12"/>
 
                         <Markdown x:Name="InteractiveMarkdown"
@@ -75,20 +70,16 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Custom Styling"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="The control can inherit the surrounding theme or use native styling properties for article-like layouts."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <Markdown x:Name="StyledMarkdown"
-                              Height="280"
-                              Background="#0F172A"
-                              Foreground="#E2E8F0" />
+                              Height="280" />
                 </Border>
             </StackPanel>
         </Border>
@@ -102,7 +93,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Markdown Properties"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -110,19 +100,15 @@
                         Padding="16">
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="Text - Markdown source string rendered by the control"
-                                   Foreground="{DynamicResource GalleryTextSecondary}"
                                    FontSize="13"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="BaseUri - Resolves relative links and images in the generated HTML"
-                                   Foreground="{DynamicResource GalleryTextSecondary}"
                                    FontSize="13"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="LinkForeground / CodeBackground / QuoteBorderBrush - Native styling hooks for rich content"
-                                   Foreground="{DynamicResource GalleryTextSecondary}"
                                    FontSize="13"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="Background / Foreground / FontFamily / FontSize - Shape the native renderer typography"
-                                   Foreground="{DynamicResource GalleryTextSecondary}"
                                    FontSize="13"/>
                     </StackPanel>
                 </Border>
@@ -138,7 +124,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -164,7 +149,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

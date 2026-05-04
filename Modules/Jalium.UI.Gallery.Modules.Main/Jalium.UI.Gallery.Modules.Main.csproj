@@ -38,7 +38,10 @@
     <ProjectReference Include="..\..\..\Jalium.UI\src\managed\Jalium.UI.Controls\Jalium.UI.Controls.csproj" />
     <ProjectReference Include="..\..\..\Jalium.UI\src\managed\Jalium.UI.Xaml\Jalium.UI.Xaml.csproj" />
     <ProjectReference Include="..\..\..\Jalium.UI\src\managed\Jalium.UI.Gpu\Jalium.UI.Gpu.csproj" />
-    <ProjectReference Include="..\..\..\Jalium.UI\src\managed\Jalium.UI.Xaml.SourceGenerator\Jalium.UI.Xaml.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\..\..\Jalium.UI\src\managed\Jalium.UI.Xaml.SourceGenerator\Jalium.UI.Xaml.SourceGenerator.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false"
+                      UndefineProperties="PublishAot;PublishTrimmed;PublishSingleFile;PublishReadyToRun;SelfContained;RuntimeIdentifier;RuntimeIdentifiers" />
     <!-- Build 项目：仅构建时依赖（提供 MSBuild 任务 DLL），不作为运行时引用 -->
     <ProjectReference Include="..\..\..\Jalium.UI\src\managed\Jalium.UI.Build\Jalium.UI.Build.csproj" ReferenceOutputAssembly="false" BuildReference="false" />
   </ItemGroup>

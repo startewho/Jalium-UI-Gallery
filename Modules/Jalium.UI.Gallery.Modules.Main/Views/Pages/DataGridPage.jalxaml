@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="DataGrid"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control that displays data in a customizable grid with rows and columns."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Interactive Demo Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Click rows to select, click column headers to sort."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -42,11 +38,9 @@
                                   Margin="0,0,0,16"/>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Selected: "
-                                       Foreground="{DynamicResource GalleryTextTertiary}"
                                        FontSize="12"/>
                             <TextBlock x:Name="SelectedItemText"
                                        Text="(none)"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontSize="12"/>
                         </StackPanel>
                     </StackPanel>
@@ -64,11 +58,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Features"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="DataGrid supports various features for data display and editing."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -76,35 +68,27 @@
                         Padding="16">
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="* Auto-generate columns from data source"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="* Column sorting (click headers)"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="* Column resizing (drag column edges)"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="* Single and Extended selection modes"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="* Row and Column headers visibility"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="* Alternating row backgrounds"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="* Grid lines customization"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"
                                    Margin="0,0,0,8"/>
                         <TextBlock Text="* Keyboard navigation (Up/Down/Home/End)"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"/>
                     </StackPanel>
                 </Border>
@@ -121,7 +105,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -147,7 +130,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

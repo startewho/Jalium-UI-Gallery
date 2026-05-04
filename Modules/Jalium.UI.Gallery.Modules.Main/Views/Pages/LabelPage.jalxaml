@@ -16,17 +16,17 @@
 
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
-                            <Label Content="Username:" Width="100" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Label Content="Username:" Width="100"/>
                             <TextBox x:Name="UsernameBox" Width="200" />
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
-                            <Label Content="Password:" Width="100" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Label Content="Password:" Width="100"/>
                             <PasswordBox Width="200" />
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal">
-                            <Label Content="Email:" Width="100" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Label Content="Email:" Width="100"/>
                             <TextBox Width="200" />
                         </StackPanel>
                     </StackPanel>
@@ -54,7 +54,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="XAML Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"
@@ -80,7 +79,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="C# Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"

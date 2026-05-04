@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Button"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A button control that responds to user clicks."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Interactive Demo Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Click the button to increment the counter."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -41,10 +37,9 @@
                                 Content="Click Me"
                                 Width="100"
                                 Height="32"
-                                Margin="0,0,16,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                Margin="0,0,16,0"/>
                         <TextBlock x:Name="CounterText"
                                    Text="Count: 0"
-                                   Foreground="{DynamicResource GalleryTextPrimary}"
                                    FontSize="14"
                                    VerticalAlignment="Center"/>
                     </StackPanel>
@@ -62,11 +57,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic Button"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Standard button with default styling."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -76,11 +69,11 @@
                         <Button Content="Click Me"
                                 Width="100"
                                 Height="32"
-                                Margin="0,0,12,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                Margin="0,0,12,0"/>
                         <Button Content="Disabled"
                                 Width="100"
                                 Height="32"
-                                IsEnabled="False" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                IsEnabled="False"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -96,11 +89,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Button Variants"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Different button sizes and styles."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -111,20 +102,74 @@
                                 Width="80"
                                 Height="28"
                                 FontSize="12"
-                                Margin="0,0,12,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                Margin="0,0,12,0"/>
                         <Button Content="Medium"
                                 Width="100"
                                 Height="32"
                                 FontSize="14"
-                                Margin="0,0,12,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                Margin="0,0,12,0"/>
                         <Button Content="Large"
                                 Width="120"
                                 Height="40"
-                                FontSize="16" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                                FontSize="16"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
         </Border>
+
+        <!-- ThemeResource AccentBrush Card -->
+        <Border Background="{DynamicResource GalleryCardBackground}"
+                BorderBrush="{DynamicResource GalleryBorderDefault}"
+                BorderThickness="1"
+                CornerRadius="14"
+                Padding="20"
+                Margin="0,0,0,16">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="ThemeResource AccentBrush"
+                           FontSize="16"
+                           Margin="0,0,0,4"/>
+                <TextBlock Text="Buttons bound to AccentBrush via {ThemeResource} — repaint automatically when the theme or accent color switches."
+                           FontSize="12"
+                           Margin="0,0,0,16"
+                           TextWrapping="Wrap"/>
+
+                <Border Background="{DynamicResource GalleryCardInnerBackground}"
+                        CornerRadius="8"
+                        Padding="16">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Accent"
+                                Background="{ThemeResource AccentBrush}"
+                                BorderBrush="{ThemeResource AccentBrush}"
+                                Foreground="{ThemeResource TextOnAccentFillColorSelectedTextBrush}"
+                                Width="100"
+                                Height="32"
+                                Margin="0,0,12,0"/>
+                        <Button Content="Hover"
+                                Background="{ThemeResource AccentBrushHover}"
+                                BorderBrush="{ThemeResource AccentBrushHover}"
+                                Foreground="{ThemeResource TextOnAccentFillColorSelectedTextBrush}"
+                                Width="100"
+                                Height="32"
+                                Margin="0,0,12,0"/>
+                        <Button Content="Pressed"
+                                Background="{ThemeResource AccentBrushPressed}"
+                                BorderBrush="{ThemeResource AccentBrushPressed}"
+                                Foreground="{ThemeResource TextOnAccentFillColorSelectedTextBrush}"
+                                Width="100"
+                                Height="32"
+                                Margin="0,0,12,0"/>
+                        <Button Content="Outlined"
+                                Background="Transparent"
+                                BorderBrush="{ThemeResource AccentBrush}"
+                                BorderThickness="2"
+                                Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"
+                                Width="110"
+                                Height="32"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+
         <!-- XAML Code Example -->
         <Border Background="{DynamicResource GalleryCardBackground}"
                 BorderBrush="{DynamicResource GalleryBorderDefault}"
@@ -135,7 +180,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -161,7 +205,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

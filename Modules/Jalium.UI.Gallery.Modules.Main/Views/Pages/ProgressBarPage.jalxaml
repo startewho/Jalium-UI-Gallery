@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="ProgressBar"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control that indicates the progress of an operation."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Interactive Demo Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Use the slider to change the progress value."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -45,11 +41,9 @@
                                      Margin="0,0,0,16"/>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Value: "
-                                       Foreground="{DynamicResource GalleryTextTertiary}"
                                        FontSize="12"/>
                             <TextBlock x:Name="ProgressValue"
                                        Text="45%"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontSize="12"/>
                         </StackPanel>
                         <Slider x:Name="ProgressSlider"
@@ -73,11 +67,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Progress Variants"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="ProgressBars with different values."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -85,7 +77,6 @@
                         Padding="16">
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="25%"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"
                                    Margin="0,0,0,4"/>
                         <ProgressBar Value="25"
@@ -95,7 +86,6 @@
                                      Margin="0,0,0,16"/>
 
                         <TextBlock Text="50%"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"
                                    Margin="0,0,0,4"/>
                         <ProgressBar Value="50"
@@ -105,7 +95,6 @@
                                      Margin="0,0,0,16"/>
 
                         <TextBlock Text="75%"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"
                                    Margin="0,0,0,4"/>
                         <ProgressBar Value="75"
@@ -115,7 +104,6 @@
                                      Margin="0,0,0,16"/>
 
                         <TextBlock Text="100%"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"
                                    Margin="0,0,0,4"/>
                         <ProgressBar Value="100"
@@ -137,11 +125,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Indeterminate Mode"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A progress bar that shows activity without a specific percentage."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -162,7 +148,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -188,7 +173,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

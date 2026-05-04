@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="ContextMenu"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A popup menu that appears when right-clicking on an element."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic ContextMenu Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic ContextMenu"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Right-click on the area below to open the context menu."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -38,7 +34,6 @@
                         Padding="40"
                         x:Name="ContextMenuArea">
                     <TextBlock Text="Right-click here"
-                               Foreground="{DynamicResource GalleryTextTertiary}"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"/>
                     <ContextMenuService.ContextMenu>
@@ -64,18 +59,15 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="ContextMenu with Submenus"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Context menus can contain nested submenus."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="40">
                     <TextBlock Text="Right-click here for nested menu"
-                               Foreground="{DynamicResource GalleryTextTertiary}"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"/>
                     <ContextMenuService.ContextMenu>
@@ -117,11 +109,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Right-click to select an action. The selected action will be displayed."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -130,11 +120,9 @@
                         x:Name="InteractiveArea">
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                         <TextBlock Text="Right-click here"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    HorizontalAlignment="Center"/>
                         <TextBlock x:Name="SelectedActionText"
                                    Text="No action selected"
-                                   Foreground="{DynamicResource GalleryAccent}"
                                    HorizontalAlignment="Center"
                                    Margin="0,8,0,0"/>
                     </StackPanel>
@@ -158,7 +146,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -184,7 +171,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

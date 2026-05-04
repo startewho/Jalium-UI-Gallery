@@ -46,7 +46,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="XAML Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"
@@ -72,7 +71,6 @@
                 <StackPanel Orientation="Vertical">
                     <TextBlock Text="C# Code Example"
                                FontSize="16"
-                               Foreground="{DynamicResource GalleryTextPrimary}"
                                Margin="0,0,0,16"/>
                     <Border Background="{DynamicResource GalleryCardInnerBackground}"
                             CornerRadius="8"

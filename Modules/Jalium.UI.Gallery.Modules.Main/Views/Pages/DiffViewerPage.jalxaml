@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="DiffViewer"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control that displays side-by-side or unified text diffs with line-level and word-level highlighting."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Side-by-Side Diff Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Side-by-Side Diff"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Compare two text documents with additions and removals highlighted in separate panels."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -55,11 +51,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Unified View"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Display the diff in a single unified view, similar to git diff output."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -83,11 +77,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Edit the original and modified text to see the diff update in real time."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -96,7 +88,7 @@
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                             <StackPanel Orientation="Vertical" Width="400" Margin="0,0,16,0">
-                                <TextBlock Text="Original Text:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                                <TextBlock Text="Original Text:" FontSize="12" Margin="0,0,0,4"/>
                                 <TextBox x:Name="OriginalTextInput"
                                          AcceptsReturn="True"
                                          Height="120"
@@ -104,7 +96,7 @@
                                          FontSize="12"/>
                             </StackPanel>
                             <StackPanel Orientation="Vertical" Width="400">
-                                <TextBlock Text="Modified Text:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                                <TextBlock Text="Modified Text:" FontSize="12" Margin="0,0,0,4"/>
                                 <TextBox x:Name="ModifiedTextInput"
                                          AcceptsReturn="True"
                                          Height="120"
@@ -130,7 +122,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -156,7 +147,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

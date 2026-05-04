@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="CommandBarFlyout"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A flyout that displays a CommandBar with primary and secondary commands in a lightweight popup."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic CommandBarFlyout Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic CommandBarFlyout"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Click the button below to open a CommandBarFlyout with editing commands."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -42,7 +38,6 @@
                 <TextBlock x:Name="BasicFlyoutStatus"
                            Text="Click the button to open the CommandBarFlyout."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextTertiary}"
                            Margin="0,12,0,0"/>
             </StackPanel>
         </Border>
@@ -57,11 +52,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="CommandBarFlyout with Mixed Commands"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A CommandBarFlyout with both primary and secondary commands. The secondary commands appear in the overflow."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -73,7 +66,6 @@
                 <TextBlock x:Name="MixedFlyoutStatus"
                            Text="Click the button to open the flyout with mixed commands."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextTertiary}"
                            Margin="0,12,0,0"/>
             </StackPanel>
         </Border>
@@ -87,7 +79,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -113,7 +104,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

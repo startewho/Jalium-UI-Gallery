@@ -13,49 +13,95 @@ public partial class SystemNotificationPage : Page
     {
         InitializeComponent();
 
-        // Initialize SystemNotificationManager
         var mgr = SystemNotificationManager.Current;
-        mgr.Initialize("Jalium.UI.Gallery", "Jalium.UI Gallery");
+        Exception? initFailure = TryInitializeManager(mgr);
 
-        // Platform support
-        if (SupportedText != null)
-        {
-            SupportedText.Text = mgr.IsSupported
-                ? "System notifications are supported on this platform."
-                : "System notifications are NOT supported on this platform.";
-            SupportedText.Foreground = new Media.SolidColorBrush(
-                mgr.IsSupported ? Media.Color.FromRgb(0x4C, 0xAF, 0x50) : Media.Color.FromRgb(0xF4, 0x43, 0x36));
-        }
+        bool supported = mgr.IsSupported;
+        UpdateSupportText(supported, initFailure);
+        ConfigureActionButtons(mgr, supported);
 
-        // Basic notification
-        if (SendBasicButton != null)
-            SendBasicButton.Click += OnSendBasicClick;
-
-        // Priority buttons
-        if (LowPriorityButton != null)
-            LowPriorityButton.Click += (s, e) => SendWithPriority(NotificationPriority.Low);
-        if (NormalPriorityButton != null)
-            NormalPriorityButton.Click += (s, e) => SendWithPriority(NotificationPriority.Normal);
-        if (HighPriorityButton != null)
-            HighPriorityButton.Click += (s, e) => SendWithPriority(NotificationPriority.High);
-
-        // Action notification
-        if (SendActionButton != null)
-            SendActionButton.Click += OnSendActionClick;
-
-        // Advanced options
-        if (SendAdvancedButton != null)
-            SendAdvancedButton.Click += OnSendAdvancedClick;
-        if (RemoveTagButton != null)
-            RemoveTagButton.Click += OnRemoveTagClick;
-        if (ClearAllButton != null)
-            ClearAllButton.Click += (s, e) => mgr.ClearAll();
-
-        // Expiration slider
         if (ExpirationSlider != null)
             ExpirationSlider.ValueChanged += OnExpirationChanged;
 
         LoadCodeExamples();
+    }
+
+    private static Exception? TryInitializeManager(SystemNotificationManager mgr)
+    {
+        try
+        {
+            mgr.Initialize("Jalium.UI.Gallery", "Jalium.UI Gallery");
+            return null;
+        }
+        catch (Exception ex)
+        {
+            return ex;
+        }
+    }
+
+    private void UpdateSupportText(bool supported, Exception? initFailure)
+    {
+        if (SupportedText == null) return;
+
+        if (supported)
+        {
+            SupportedText.Text = "System notifications are supported on this platform.";
+            SupportedText.Foreground = new Media.SolidColorBrush(Media.Color.FromRgb(0x4C, 0xAF, 0x50));
+            return;
+        }
+
+        var detail = initFailure?.Message;
+        SupportedText.Text = string.IsNullOrEmpty(detail)
+            ? "System notifications are NOT supported on this platform."
+            : $"System notifications are NOT available on this platform. Reason: {detail}";
+        SupportedText.Foreground = new Media.SolidColorBrush(Media.Color.FromRgb(0xF4, 0x43, 0x36));
+    }
+
+    private void ConfigureActionButtons(SystemNotificationManager mgr, bool supported)
+    {
+        if (SendBasicButton != null)
+        {
+            SendBasicButton.Click += OnSendBasicClick;
+            SendBasicButton.IsEnabled = supported;
+        }
+
+        if (LowPriorityButton != null)
+        {
+            LowPriorityButton.Click += (s, e) => SendWithPriority(NotificationPriority.Low);
+            LowPriorityButton.IsEnabled = supported;
+        }
+        if (NormalPriorityButton != null)
+        {
+            NormalPriorityButton.Click += (s, e) => SendWithPriority(NotificationPriority.Normal);
+            NormalPriorityButton.IsEnabled = supported;
+        }
+        if (HighPriorityButton != null)
+        {
+            HighPriorityButton.Click += (s, e) => SendWithPriority(NotificationPriority.High);
+            HighPriorityButton.IsEnabled = supported;
+        }
+
+        if (SendActionButton != null)
+        {
+            SendActionButton.Click += OnSendActionClick;
+            SendActionButton.IsEnabled = supported;
+        }
+
+        if (SendAdvancedButton != null)
+        {
+            SendAdvancedButton.Click += OnSendAdvancedClick;
+            SendAdvancedButton.IsEnabled = supported;
+        }
+        if (RemoveTagButton != null)
+        {
+            RemoveTagButton.Click += OnRemoveTagClick;
+            RemoveTagButton.IsEnabled = supported;
+        }
+        if (ClearAllButton != null)
+        {
+            ClearAllButton.Click += (s, e) => mgr.ClearAll();
+            ClearAllButton.IsEnabled = supported;
+        }
     }
 
     private void OnSendBasicClick(object? sender, EventArgs e)

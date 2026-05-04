@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Slider"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control that lets the user select from a range of values by moving a thumb."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Interactive Demo Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Drag the slider thumb to change the value."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -45,11 +41,9 @@
                                 Margin="0,0,0,16"/>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Value: "
-                                       Foreground="{DynamicResource GalleryTextTertiary}"
                                        FontSize="12"/>
                             <TextBlock x:Name="SliderValue"
                                        Text="50"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontSize="12"/>
                         </StackPanel>
                     </StackPanel>
@@ -67,11 +61,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Slider with Ticks"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A slider with tick marks at regular intervals."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -98,11 +90,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Snap to Ticks"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A slider that snaps to tick mark positions."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -130,11 +120,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Custom Range"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Sliders with different minimum and maximum values."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -142,7 +130,6 @@
                         Padding="16">
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="Volume (0-100)"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"
                                    Margin="0,0,0,4"/>
                         <Slider Minimum="0"
@@ -152,7 +139,6 @@
                                 Margin="0,0,0,16"/>
 
                         <TextBlock Text="Temperature (-10 to 40)"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"
                                    Margin="0,0,0,4"/>
                         <Slider Minimum="-10"
@@ -173,7 +159,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -199,7 +184,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

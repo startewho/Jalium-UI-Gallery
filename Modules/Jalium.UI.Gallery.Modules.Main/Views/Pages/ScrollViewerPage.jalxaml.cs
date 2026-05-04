@@ -22,7 +22,7 @@ public partial class ScrollViewerPage : Page
                 <TextBlock Text=""Item 2"" Foreground=""White""
                            HorizontalAlignment=""Center"" VerticalAlignment=""Center""/>
             </Border>
-            <Border Background=""#881798"" Height=""40"" Margin=""0,0,0,4"">
+            <Border Background=""#179842"" Height=""40"" Margin=""0,0,0,4"">
                 <TextBlock Text=""Item 3"" Foreground=""White""
                            HorizontalAlignment=""Center"" VerticalAlignment=""Center""/>
             </Border>

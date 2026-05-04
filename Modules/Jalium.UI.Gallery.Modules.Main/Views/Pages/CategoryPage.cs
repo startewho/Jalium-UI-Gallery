@@ -247,6 +247,7 @@ public class BasicCategoryPage : CategoryPage
         new ControlInfo("CheckBox", "Boolean and three-state selection.", "checkbox"),
         new ControlInfo("RadioButton", "Exclusive selection within a group.", "radiobutton"),
         new ControlInfo("Slider", "Pick a value from a continuous range.", "slider"),
+        new ControlInfo("RangeSlider", "Pick a continuous sub-range with two thumbs.", "rangeslider"),
         new ControlInfo("ProgressBar", "Determinate and indeterminate progress.", "progressbar"),
         new ControlInfo("TextBox", "Single and multi-line text input.", "textbox"),
         new ControlInfo("PasswordBox", "Masked input with reveal support.", "passwordbox"),
@@ -361,6 +362,7 @@ public class CollectionsCategoryPage : CategoryPage
         new ControlInfo("ListBox", "Single-column selectable list.", "listbox"),
         new ControlInfo("ListView", "Flexible list with templates.", "listview"),
         new ControlInfo("TreeView", "Hierarchical data display.", "treeview"),
+        new ControlInfo("TreeSelector", "Hierarchical multi-select with cascade checkboxes.", "treeselector"),
         new ControlInfo("DataGrid", "Editable tabular data view.", "datagrid"),
         new ControlInfo("TreeDataGrid", "Hierarchical grid with expand/collapse.", "treedatagrid"),
         new ControlInfo("Calendar", "Month/date selection control.", "calendar")

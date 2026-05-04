@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="EditControl"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A code editor control with syntax highlighting, line numbers, code folding, and more."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic Editor Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Code Editor with C# Syntax Highlighting"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Full keyboard navigation, selection, clipboard, undo/redo, and auto-indent."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -52,12 +48,10 @@
                     <TextBlock x:Name="StatusText"
                                Text="Ready"
                                FontSize="12"
-                               Foreground="{DynamicResource GalleryTextTertiary}"
                                Margin="0,0,16,0"/>
                     <TextBlock x:Name="CursorPositionText"
                                Text="Ln 1, Col 0"
-                               FontSize="12"
-                               Foreground="{DynamicResource GalleryTextTertiary}"/>
+                               FontSize="12"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -72,29 +66,28 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Options"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
                     <CheckBox x:Name="LineNumbersCheckBox"
                               Content="Show Line Numbers"
                               IsChecked="True"
-                              Margin="0,0,16,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                              Margin="0,0,16,0"/>
                     <CheckBox x:Name="HighlightLineCheckBox"
                               Content="Highlight Current Line"
                               IsChecked="True"
-                              Margin="0,0,16,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                              Margin="0,0,16,0"/>
                     <CheckBox x:Name="ReadOnlyCheckBox"
-                              Content="Read Only" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                              Content="Read Only"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,8">
-                    <Button x:Name="UndoButton" Content="Undo" Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                    <Button x:Name="RedoButton" Content="Redo" Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                    <Button x:Name="SelectAllButton" Content="Select All" Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                    <Button x:Name="ClearButton" Content="Clear" Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                    <Button x:Name="LoadSampleButton" Content="Load C# Sample" Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                    <Button x:Name="LoadJalxamlSampleButton" Content="Load JALXAML Sample" Margin="0,0,8,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                    <Button x:Name="UndoButton" Content="Undo" Margin="0,0,8,0"/>
+                    <Button x:Name="RedoButton" Content="Redo" Margin="0,0,8,0"/>
+                    <Button x:Name="SelectAllButton" Content="Select All" Margin="0,0,8,0"/>
+                    <Button x:Name="ClearButton" Content="Clear" Margin="0,0,8,0"/>
+                    <Button x:Name="LoadSampleButton" Content="Load C# Sample" Margin="0,0,8,0"/>
+                    <Button x:Name="LoadJalxamlSampleButton" Content="Load JALXAML Sample" Margin="0,0,8,0"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -109,33 +102,22 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Keyboard Shortcuts"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Ctrl+C / Ctrl+X / Ctrl+V - Copy / Cut / Paste"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Ctrl+Z / Ctrl+Y - Undo / Redo"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Ctrl+A - Select All"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Home - Smart Home (first non-whitespace / line start)"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Ctrl+Left/Right - Word Navigation"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Ctrl+Home/End - Document Start / End"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Shift+Arrows - Extend Selection"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Tab / Shift+Tab - Indent / Unindent"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Enter - New line with auto-indent"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Double-click - Select word / Triple-click - Select line"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13"/>
+                        <TextBlock Text="Ctrl+C / Ctrl+X / Ctrl+V - Copy / Cut / Paste" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Ctrl+Z / Ctrl+Y - Undo / Redo" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Ctrl+A - Select All" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Home - Smart Home (first non-whitespace / line start)" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Ctrl+Left/Right - Word Navigation" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Ctrl+Home/End - Document Start / End" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Shift+Arrows - Extend Selection" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Tab / Shift+Tab - Indent / Unindent" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Enter - New line with auto-indent" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Double-click - Select word / Triple-click - Select line" FontSize="13"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -151,21 +133,16 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Architecture"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Document Layer: Rope-based buffer (O(log n) insert/delete), DocumentLineTree, UndoStack"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="View Layer: Direct DrawingContext rendering with span-based syntax highlighting"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Syntax: ISyntaxHighlighter interface, RegexSyntaxHighlighter with multi-line span support"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13" Margin="0,0,0,6"/>
-                        <TextBlock Text="Features: Code folding, bracket matching, find/replace, minimap"
-                                   Foreground="{DynamicResource GalleryTextSecondary}" FontSize="13"/>
+                        <TextBlock Text="Document Layer: Rope-based buffer (O(log n) insert/delete), DocumentLineTree, UndoStack" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="View Layer: Direct DrawingContext rendering with span-based syntax highlighting" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Syntax: ISyntaxHighlighter interface, RegexSyntaxHighlighter with multi-line span support" FontSize="13" Margin="0,0,0,6"/>
+                        <TextBlock Text="Features: Code folding, bracket matching, find/replace, minimap" FontSize="13"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -180,7 +157,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -206,7 +182,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

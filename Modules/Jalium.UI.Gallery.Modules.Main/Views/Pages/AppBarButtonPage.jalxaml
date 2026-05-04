@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="AppBarButton"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A button control designed for use in a CommandBar, with icon and label support."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic AppBarButton Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic AppBarButton"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="AppBarButtons with icons and labels for common actions."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -58,7 +54,6 @@
                 <TextBlock x:Name="BasicStatusText"
                            Text="Click any button to see its action."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextTertiary}"
                            Margin="0,12,0,0"/>
             </StackPanel>
         </Border>
@@ -73,11 +68,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Compact Mode"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="AppBarButtons in compact mode show only icons, without labels."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -108,7 +101,6 @@
                 <TextBlock x:Name="CompactStatusText"
                            Text="Compact buttons show icon only, hover for tooltip with label."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextTertiary}"
                            Margin="0,12,0,0"/>
             </StackPanel>
         </Border>
@@ -122,7 +114,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -148,7 +139,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

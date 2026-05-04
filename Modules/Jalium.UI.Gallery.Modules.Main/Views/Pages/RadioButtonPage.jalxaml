@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="RadioButton"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A button that can be selected but not cleared by a user. RadioButtons in the same group are mutually exclusive."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Interactive Demo Card -->
@@ -26,29 +24,26 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Select your favorite color."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <RadioButton x:Name="RadioRed" GroupName="Colors" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}">
-                            <TextBlock Text="Red" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                        <RadioButton x:Name="RadioRed" GroupName="Colors" Margin="0,0,0,8">
+                            <TextBlock Text="Red" FontSize="14"/>
                         </RadioButton>
-                        <RadioButton x:Name="RadioGreen" GroupName="Colors" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}">
-                            <TextBlock Text="Green" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                        <RadioButton x:Name="RadioGreen" GroupName="Colors" Margin="0,0,0,8">
+                            <TextBlock Text="Green" FontSize="14"/>
                         </RadioButton>
-                        <RadioButton x:Name="RadioBlue" GroupName="Colors" IsChecked="True" Margin="0,0,0,8" Foreground="{DynamicResource GalleryTextPrimary}">
-                            <TextBlock Text="Blue" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                        <RadioButton x:Name="RadioBlue" GroupName="Colors" IsChecked="True" Margin="0,0,0,8">
+                            <TextBlock Text="Blue" FontSize="14"/>
                         </RadioButton>
                         <TextBlock x:Name="RadioStatus"
                                    Text="Selected: Blue"
-                                   Foreground="{DynamicResource GalleryTextTertiary}"
                                    FontSize="12"
                                    Margin="0,8,0,0"/>
                     </StackPanel>
@@ -66,11 +61,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Grouped RadioButtons"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="RadioButtons can be organized into separate groups."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -78,27 +71,27 @@
                         Padding="16">
                     <StackPanel Orientation="Horizontal">
                         <StackPanel Orientation="Vertical" Margin="0,0,32,0">
-                            <TextBlock Text="Size" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,8"/>
-                            <RadioButton GroupName="Size" Margin="0,0,0,4" Foreground="{DynamicResource GalleryTextPrimary}">
-                                <TextBlock Text="Small" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <TextBlock Text="Size" FontSize="12" Margin="0,0,0,8"/>
+                            <RadioButton GroupName="Size" Margin="0,0,0,4">
+                                <TextBlock Text="Small" FontSize="14"/>
                             </RadioButton>
-                            <RadioButton GroupName="Size" IsChecked="True" Margin="0,0,0,4" Foreground="{DynamicResource GalleryTextPrimary}">
-                                <TextBlock Text="Medium" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <RadioButton GroupName="Size" IsChecked="True" Margin="0,0,0,4">
+                                <TextBlock Text="Medium" FontSize="14"/>
                             </RadioButton>
-                            <RadioButton GroupName="Size" Foreground="{DynamicResource GalleryTextPrimary}">
-                                <TextBlock Text="Large" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <RadioButton GroupName="Size">
+                                <TextBlock Text="Large" FontSize="14"/>
                             </RadioButton>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                            <TextBlock Text="Speed" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,8"/>
-                            <RadioButton GroupName="Speed" Margin="0,0,0,4" Foreground="{DynamicResource GalleryTextPrimary}">
-                                <TextBlock Text="Slow" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <TextBlock Text="Speed" FontSize="12" Margin="0,0,0,8"/>
+                            <RadioButton GroupName="Speed" Margin="0,0,0,4">
+                                <TextBlock Text="Slow" FontSize="14"/>
                             </RadioButton>
-                            <RadioButton GroupName="Speed" IsChecked="True" Margin="0,0,0,4" Foreground="{DynamicResource GalleryTextPrimary}">
-                                <TextBlock Text="Normal" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <RadioButton GroupName="Speed" IsChecked="True" Margin="0,0,0,4">
+                                <TextBlock Text="Normal" FontSize="14"/>
                             </RadioButton>
-                            <RadioButton GroupName="Speed" Foreground="{DynamicResource GalleryTextPrimary}">
-                                <TextBlock Text="Fast" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="14"/>
+                            <RadioButton GroupName="Speed">
+                                <TextBlock Text="Fast" FontSize="14"/>
                             </RadioButton>
                         </StackPanel>
                     </StackPanel>
@@ -115,7 +108,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -141,7 +133,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

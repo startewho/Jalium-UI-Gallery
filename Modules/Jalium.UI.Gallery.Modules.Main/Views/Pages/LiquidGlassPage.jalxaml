@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Liquid Glass"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="Apple-style liquid glass effect with SDF-based refraction, chromatic aberration, edge highlights, and inner shadow. Set LiquidGlass=True on any Border control."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Default Liquid Glass -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Default Liquid Glass"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Background refraction with edge highlights and inner shadow. BlurRadius=8, RefractionAmount=60."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}" CornerRadius="8" Padding="16" Height="200">
@@ -43,14 +39,14 @@
                                 <Border Width="40" Height="40" Background="#45B7D1"/>
                                 <Border Width="40" Height="40" Background="#96CEB4"/>
                                 <Border Width="40" Height="40" Background="#FFEAA7"/>
-                                <Border Width="40" Height="40" Background="#DDA0DD"/>
+                                <Border Width="40" Height="40" Background="#A0DDB4"/>
                                 <Border Width="40" Height="40" Background="#98D8C8"/>
                                 <Border Width="40" Height="40" Background="#F7DC6F"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                                <Border Width="40" Height="40" Background="#E91E63"/>
-                                <Border Width="40" Height="40" Background="#9C27B0"/>
-                                <Border Width="40" Height="40" Background="#673AB7"/>
+                                <Border Width="40" Height="40" Background="#1EE962"/>
+                                <Border Width="40" Height="40" Background="#27B055"/>
+                                <Border Width="40" Height="40" Background="#3AB764"/>
                                 <Border Width="40" Height="40" Background="#3F51B5"/>
                                 <Border Width="40" Height="40" Background="#2196F3"/>
                                 <Border Width="40" Height="40" Background="#03A9F4"/>
@@ -73,9 +69,9 @@
                                 <Border Width="40" Height="40" Background="#FFFF00"/>
                                 <Border Width="40" Height="40" Background="#00FF00"/>
                                 <Border Width="40" Height="40" Background="#0000FF"/>
-                                <Border Width="40" Height="40" Background="#4B0082"/>
-                                <Border Width="40" Height="40" Background="#9400D3"/>
-                                <Border Width="40" Height="40" Background="#FF1493"/>
+                                <Border Width="40" Height="40" Background="#00822B"/>
+                                <Border Width="40" Height="40" Background="#00D346"/>
+                                <Border Width="40" Height="40" Background="#14FF62"/>
                             </StackPanel>
                         </StackPanel>
                         <!-- Liquid glass overlay -->
@@ -88,7 +84,6 @@
                                 HorizontalAlignment="Stretch"
                                 VerticalAlignment="Stretch">
                             <TextBlock Text="Liquid Glass"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontSize="16"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"/>
@@ -108,11 +103,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Chromatic Aberration"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Add rainbow-edge dispersion effect. ChromaticAberration controls the amount of color separation."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}" CornerRadius="8" Padding="16" Height="200">
@@ -141,19 +134,19 @@
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
                                 <Border Width="40" Height="40" Background="#0000FF"/>
-                                <Border Width="40" Height="40" Background="#4000FF"/>
-                                <Border Width="40" Height="40" Background="#8000FF"/>
-                                <Border Width="40" Height="40" Background="#C000FF"/>
-                                <Border Width="40" Height="40" Background="#FF00FF"/>
-                                <Border Width="40" Height="40" Background="#FF00C0"/>
-                                <Border Width="40" Height="40" Background="#FF0080"/>
-                                <Border Width="40" Height="40" Background="#FF0040"/>
+                                <Border Width="40" Height="40" Background="#00FF55"/>
+                                <Border Width="40" Height="40" Background="#00FF55"/>
+                                <Border Width="40" Height="40" Background="#00FF55"/>
+                                <Border Width="40" Height="40" Background="#00FF55"/>
+                                <Border Width="40" Height="40" Background="#00FF55"/>
+                                <Border Width="40" Height="40" Background="#00FF55"/>
+                                <Border Width="40" Height="40" Background="#00FF55"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
                                 <Border Width="40" Height="40" Background="#1ABC9C"/>
                                 <Border Width="40" Height="40" Background="#2ECC71"/>
                                 <Border Width="40" Height="40" Background="#3498DB"/>
-                                <Border Width="40" Height="40" Background="#9B59B6"/>
+                                <Border Width="40" Height="40" Background="#59B678"/>
                                 <Border Width="40" Height="40" Background="#E74C3C"/>
                                 <Border Width="40" Height="40" Background="#F39C12"/>
                                 <Border Width="40" Height="40" Background="#E67E22"/>
@@ -171,7 +164,6 @@
                                 HorizontalAlignment="Stretch"
                                 VerticalAlignment="Stretch">
                             <TextBlock Text="Chromatic Aberration (0.5)"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontSize="14"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"/>
@@ -191,11 +183,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Corner Radius Variants"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Liquid glass adapts the SDF shape to different corner radii."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <StackPanel Orientation="Horizontal">
@@ -210,8 +200,8 @@
                                     <Border Width="30" Height="30" Background="#FFEAA7"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
-                                    <Border Width="30" Height="30" Background="#E91E63"/>
-                                    <Border Width="30" Height="30" Background="#9C27B0"/>
+                                    <Border Width="30" Height="30" Background="#1EE962"/>
+                                    <Border Width="30" Height="30" Background="#27B055"/>
                                     <Border Width="30" Height="30" Background="#2196F3"/>
                                     <Border Width="30" Height="30" Background="#4CAF50"/>
                                 </StackPanel>
@@ -237,7 +227,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="R=0"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="12"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -250,9 +239,9 @@
                         <Grid>
                             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                                 <StackPanel Orientation="Horizontal">
-                                    <Border Width="30" Height="30" Background="#E91E63"/>
-                                    <Border Width="30" Height="30" Background="#9C27B0"/>
-                                    <Border Width="30" Height="30" Background="#673AB7"/>
+                                    <Border Width="30" Height="30" Background="#1EE962"/>
+                                    <Border Width="30" Height="30" Background="#27B055"/>
+                                    <Border Width="30" Height="30" Background="#3AB764"/>
                                     <Border Width="30" Height="30" Background="#3F51B5"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
@@ -283,7 +272,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="R=8"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="12"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -302,13 +290,13 @@
                                     <Border Width="30" Height="30" Background="#FFFF00"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
-                                    <Border Width="30" Height="30" Background="#FF00FF"/>
+                                    <Border Width="30" Height="30" Background="#00FF55"/>
                                     <Border Width="30" Height="30" Background="#00FFFF"/>
                                     <Border Width="30" Height="30" Background="#FF8000"/>
-                                    <Border Width="30" Height="30" Background="#8000FF"/>
+                                    <Border Width="30" Height="30" Background="#00FF55"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
-                                    <Border Width="30" Height="30" Background="#FF0080"/>
+                                    <Border Width="30" Height="30" Background="#00FF55"/>
                                     <Border Width="30" Height="30" Background="#80FF00"/>
                                     <Border Width="30" Height="30" Background="#0080FF"/>
                                     <Border Width="30" Height="30" Background="#FF8080"/>
@@ -329,7 +317,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="R=24"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="12"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -345,7 +332,7 @@
                                     <Border Width="30" Height="30" Background="#1ABC9C"/>
                                     <Border Width="30" Height="30" Background="#2ECC71"/>
                                     <Border Width="30" Height="30" Background="#3498DB"/>
-                                    <Border Width="30" Height="30" Background="#9B59B6"/>
+                                    <Border Width="30" Height="30" Background="#59B678"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
                                     <Border Width="30" Height="30" Background="#E74C3C"/>
@@ -357,7 +344,7 @@
                                     <Border Width="30" Height="30" Background="#16A085"/>
                                     <Border Width="30" Height="30" Background="#27AE60"/>
                                     <Border Width="30" Height="30" Background="#2980B9"/>
-                                    <Border Width="30" Height="30" Background="#8E44AD"/>
+                                    <Border Width="30" Height="30" Background="#44AD67"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
                                     <Border Width="30" Height="30" Background="#D35400"/>
@@ -375,7 +362,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="R=60"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="12"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -396,11 +382,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Tinted Liquid Glass"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Set Background on the Border to apply a colored tint over the glass effect."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <StackPanel Orientation="Horizontal">
@@ -415,10 +399,10 @@
                                     <Border Width="40" Height="40" Background="#FFEAA7"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                                    <Border Width="40" Height="40" Background="#E91E63"/>
+                                    <Border Width="40" Height="40" Background="#1EE962"/>
                                     <Border Width="40" Height="40" Background="#4CAF50"/>
                                     <Border Width="40" Height="40" Background="#FF9800"/>
-                                    <Border Width="40" Height="40" Background="#9C27B0"/>
+                                    <Border Width="40" Height="40" Background="#27B055"/>
                                 </StackPanel>
                             </StackPanel>
                             <Border x:Name="BlueTintGlass"
@@ -430,7 +414,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="Blue Tint"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="12"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -449,10 +432,10 @@
                                     <Border Width="40" Height="40" Background="#FFEAA7"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                                    <Border Width="40" Height="40" Background="#E91E63"/>
+                                    <Border Width="40" Height="40" Background="#1EE962"/>
                                     <Border Width="40" Height="40" Background="#4CAF50"/>
                                     <Border Width="40" Height="40" Background="#FF9800"/>
-                                    <Border Width="40" Height="40" Background="#9C27B0"/>
+                                    <Border Width="40" Height="40" Background="#27B055"/>
                                 </StackPanel>
                             </StackPanel>
                             <Border x:Name="GreenTintGlass"
@@ -464,7 +447,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="Green Tint"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="12"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -483,10 +465,10 @@
                                     <Border Width="40" Height="40" Background="#FFEAA7"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                                    <Border Width="40" Height="40" Background="#E91E63"/>
+                                    <Border Width="40" Height="40" Background="#1EE962"/>
                                     <Border Width="40" Height="40" Background="#4CAF50"/>
                                     <Border Width="40" Height="40" Background="#FF9800"/>
-                                    <Border Width="40" Height="40" Background="#9C27B0"/>
+                                    <Border Width="40" Height="40" Background="#27B055"/>
                                 </StackPanel>
                             </StackPanel>
                             <Border x:Name="PurpleTintGlass"
@@ -494,11 +476,10 @@
                                     CornerRadius="16"
                                     LiquidGlass="True"
                                     LiquidGlassInteractive="True"
-                                    Background="#409C27B0"
+                                    Background="#4027B055"
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="Purple Tint"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="12"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -519,11 +500,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Parameters"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Adjust blur radius, refraction amount, and chromatic aberration in real-time."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Grid>
@@ -542,11 +521,11 @@
                                     <Border Width="50" Height="50" Background="#45B7D1"/>
                                     <Border Width="50" Height="50" Background="#96CEB4"/>
                                     <Border Width="50" Height="50" Background="#FFEAA7"/>
-                                    <Border Width="50" Height="50" Background="#DDA0DD"/>
+                                    <Border Width="50" Height="50" Background="#A0DDB4"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                                    <Border Width="50" Height="50" Background="#E91E63"/>
-                                    <Border Width="50" Height="50" Background="#9C27B0"/>
+                                    <Border Width="50" Height="50" Background="#1EE962"/>
+                                    <Border Width="50" Height="50" Background="#27B055"/>
                                     <Border Width="50" Height="50" Background="#2196F3"/>
                                     <Border Width="50" Height="50" Background="#4CAF50"/>
                                     <Border Width="50" Height="50" Background="#FF9800"/>
@@ -557,7 +536,7 @@
                                     <Border Width="50" Height="50" Background="#00FF00"/>
                                     <Border Width="50" Height="50" Background="#0000FF"/>
                                     <Border Width="50" Height="50" Background="#FFFF00"/>
-                                    <Border Width="50" Height="50" Background="#FF00FF"/>
+                                    <Border Width="50" Height="50" Background="#00FF55"/>
                                     <Border Width="50" Height="50" Background="#00FFFF"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
@@ -565,7 +544,7 @@
                                     <Border Width="50" Height="50" Background="#F39C12"/>
                                     <Border Width="50" Height="50" Background="#E74C3C"/>
                                     <Border Width="50" Height="50" Background="#3498DB"/>
-                                    <Border Width="50" Height="50" Background="#8E44AD"/>
+                                    <Border Width="50" Height="50" Background="#44AD67"/>
                                     <Border Width="50" Height="50" Background="#2C3E50"/>
                                 </StackPanel>
                             </StackPanel>
@@ -582,7 +561,6 @@
                                     VerticalAlignment="Stretch">
                                 <TextBlock x:Name="InteractiveLabel"
                                            Text="Blur=8  Refraction=60  Chromatic=0"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="12"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -592,13 +570,13 @@
 
                     <!-- Controls -->
                     <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
-                        <TextBlock Text="Blur Radius" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                        <TextBlock Text="Blur Radius" FontSize="12" Margin="0,0,0,4"/>
                         <Slider x:Name="BlurSlider" Minimum="1" Maximum="30" Value="8" Margin="0,0,0,12"/>
 
-                        <TextBlock Text="Refraction Amount" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                        <TextBlock Text="Refraction Amount" FontSize="12" Margin="0,0,0,4"/>
                         <Slider x:Name="RefractionSlider" Minimum="0" Maximum="120" Value="60" Margin="0,0,0,12"/>
 
-                        <TextBlock Text="Chromatic Aberration" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,4"/>
+                        <TextBlock Text="Chromatic Aberration" FontSize="12" Margin="0,0,0,4"/>
                         <Slider x:Name="ChromaticSlider" Minimum="0" Maximum="1" Value="0" Margin="0,0,0,12"/>
                     </StackPanel>
                 </Grid>
@@ -615,11 +593,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Liquid Glass Fusion"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Adjacent liquid glass panels fuse together with smooth metaball-like blending via SDF smooth minimum (smin). Panels must be siblings in the same parent Panel."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}" CornerRadius="8" Padding="16" Height="280">
@@ -632,14 +608,14 @@
                                 <Border Width="50" Height="50" Background="#45B7D1"/>
                                 <Border Width="50" Height="50" Background="#96CEB4"/>
                                 <Border Width="50" Height="50" Background="#FFEAA7"/>
-                                <Border Width="50" Height="50" Background="#DDA0DD"/>
+                                <Border Width="50" Height="50" Background="#A0DDB4"/>
                                 <Border Width="50" Height="50" Background="#98D8C8"/>
                                 <Border Width="50" Height="50" Background="#F7DC6F"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                                <Border Width="50" Height="50" Background="#E91E63"/>
-                                <Border Width="50" Height="50" Background="#9C27B0"/>
-                                <Border Width="50" Height="50" Background="#673AB7"/>
+                                <Border Width="50" Height="50" Background="#1EE962"/>
+                                <Border Width="50" Height="50" Background="#27B055"/>
+                                <Border Width="50" Height="50" Background="#3AB764"/>
                                 <Border Width="50" Height="50" Background="#3F51B5"/>
                                 <Border Width="50" Height="50" Background="#2196F3"/>
                                 <Border Width="50" Height="50" Background="#03A9F4"/>
@@ -662,9 +638,9 @@
                                 <Border Width="50" Height="50" Background="#FFFF00"/>
                                 <Border Width="50" Height="50" Background="#00FF00"/>
                                 <Border Width="50" Height="50" Background="#0000FF"/>
-                                <Border Width="50" Height="50" Background="#4B0082"/>
-                                <Border Width="50" Height="50" Background="#9400D3"/>
-                                <Border Width="50" Height="50" Background="#FF1493"/>
+                                <Border Width="50" Height="50" Background="#00822B"/>
+                                <Border Width="50" Height="50" Background="#00D346"/>
+                                <Border Width="50" Height="50" Background="#14FF62"/>
                             </StackPanel>
                         </StackPanel>
                         <!-- Two adjacent liquid glass panels with ~20px gap (within fusionRadius=30) -->
@@ -678,7 +654,6 @@
                                 VerticalAlignment="Center"
                                 Margin="0,0,210,0">
                             <TextBlock Text="Panel A"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontSize="14"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"/>
@@ -692,7 +667,6 @@
                                 VerticalAlignment="Center"
                                 Margin="210,0,0,0">
                             <TextBlock Text="Panel B"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontSize="14"
                                        HorizontalAlignment="Center"
                                        VerticalAlignment="Center"/>
@@ -712,11 +686,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="SuperEllipse Shape"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Set Shape=SuperEllipse for iOS-style squircle borders. SuperEllipseN controls the exponent (2=circle, 4=iOS, higher=more rectangular)."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <StackPanel Orientation="Horizontal">
@@ -731,8 +703,8 @@
                                     <Border Width="30" Height="30" Background="#FFEAA7"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
-                                    <Border Width="30" Height="30" Background="#E91E63"/>
-                                    <Border Width="30" Height="30" Background="#9C27B0"/>
+                                    <Border Width="30" Height="30" Background="#1EE962"/>
+                                    <Border Width="30" Height="30" Background="#27B055"/>
                                     <Border Width="30" Height="30" Background="#2196F3"/>
                                     <Border Width="30" Height="30" Background="#4CAF50"/>
                                 </StackPanel>
@@ -758,7 +730,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="N=2 (Ellipse)"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="11"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -771,9 +742,9 @@
                         <Grid>
                             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                                 <StackPanel Orientation="Horizontal">
-                                    <Border Width="30" Height="30" Background="#E91E63"/>
-                                    <Border Width="30" Height="30" Background="#9C27B0"/>
-                                    <Border Width="30" Height="30" Background="#673AB7"/>
+                                    <Border Width="30" Height="30" Background="#1EE962"/>
+                                    <Border Width="30" Height="30" Background="#27B055"/>
+                                    <Border Width="30" Height="30" Background="#3AB764"/>
                                     <Border Width="30" Height="30" Background="#3F51B5"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
@@ -804,7 +775,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="N=4 (iOS)"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="11"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -823,13 +793,13 @@
                                     <Border Width="30" Height="30" Background="#FFFF00"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
-                                    <Border Width="30" Height="30" Background="#FF00FF"/>
+                                    <Border Width="30" Height="30" Background="#00FF55"/>
                                     <Border Width="30" Height="30" Background="#00FFFF"/>
                                     <Border Width="30" Height="30" Background="#FF8000"/>
-                                    <Border Width="30" Height="30" Background="#8000FF"/>
+                                    <Border Width="30" Height="30" Background="#00FF55"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
-                                    <Border Width="30" Height="30" Background="#FF0080"/>
+                                    <Border Width="30" Height="30" Background="#00FF55"/>
                                     <Border Width="30" Height="30" Background="#80FF00"/>
                                     <Border Width="30" Height="30" Background="#0080FF"/>
                                     <Border Width="30" Height="30" Background="#FF8080"/>
@@ -850,7 +820,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="N=6"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="11"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -866,7 +835,7 @@
                                     <Border Width="30" Height="30" Background="#1ABC9C"/>
                                     <Border Width="30" Height="30" Background="#2ECC71"/>
                                     <Border Width="30" Height="30" Background="#3498DB"/>
-                                    <Border Width="30" Height="30" Background="#9B59B6"/>
+                                    <Border Width="30" Height="30" Background="#59B678"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
                                     <Border Width="30" Height="30" Background="#E74C3C"/>
@@ -878,7 +847,7 @@
                                     <Border Width="30" Height="30" Background="#16A085"/>
                                     <Border Width="30" Height="30" Background="#27AE60"/>
                                     <Border Width="30" Height="30" Background="#2980B9"/>
-                                    <Border Width="30" Height="30" Background="#8E44AD"/>
+                                    <Border Width="30" Height="30" Background="#44AD67"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
                                     <Border Width="30" Height="30" Background="#D35400"/>
@@ -896,7 +865,6 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch">
                                 <TextBlock Text="N=10"
-                                           Foreground="{DynamicResource GalleryTextPrimary}"
                                            FontSize="11"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"/>
@@ -908,34 +876,33 @@
                 <!-- Non-glass superellipse demo -->
                 <TextBlock Text="Without Liquid Glass (solid fill)"
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextTertiary}"
                            Margin="0,16,0,8"/>
                 <StackPanel Orientation="Horizontal">
                     <Border Width="100" Height="100"
                             Shape="SuperEllipse" SuperEllipseN="4"
                             Background="#400078D4" BorderBrush="{DynamicResource GalleryAccent}" BorderThickness="2"
                             Margin="0,0,12,0">
-                        <TextBlock Text="N=4" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="11"
+                        <TextBlock Text="N=4" FontSize="11"
                                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                     <Border Width="100" Height="100"
                             Shape="SuperEllipse" SuperEllipseN="4"
                             Background="#4000C853" BorderBrush="#00C853" BorderThickness="2"
                             Margin="0,0,12,0">
-                        <TextBlock Text="N=4" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="11"
+                        <TextBlock Text="N=4" FontSize="11"
                                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                     <Border Width="100" Height="100"
                             Shape="SuperEllipse" SuperEllipseN="4"
-                            Background="#409C27B0" BorderBrush="#9C27B0" BorderThickness="2"
+                            Background="#4027B055" BorderBrush="#27B055" BorderThickness="2"
                             Margin="0,0,12,0">
-                        <TextBlock Text="N=4" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="11"
+                        <TextBlock Text="N=4" FontSize="11"
                                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                     <Border Width="150" Height="100"
                             Shape="SuperEllipse" SuperEllipseN="4"
                             Background="#40FF5722" BorderBrush="#FF5722" BorderThickness="2">
-                        <TextBlock Text="N=4 (rect)" Foreground="{DynamicResource GalleryTextPrimary}" FontSize="11"
+                        <TextBlock Text="N=4 (rect)" FontSize="11"
                                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                 </StackPanel>
@@ -952,30 +919,28 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Usage"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Set LiquidGlass properties on Border:"
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="&lt;!-- JALXAML --&gt;" Foreground="#6A9955" FontSize="12"/>
-                        <TextBlock Text="&lt;Border LiquidGlass=&quot;True&quot;" Foreground="#DCDCAA" FontSize="12" Margin="0,4,0,0"/>
-                        <TextBlock Text="        CornerRadius=&quot;16&quot;" Foreground="#DCDCAA" FontSize="12"/>
-                        <TextBlock Text="        Background=&quot;#200078D4&quot;" Foreground="#DCDCAA" FontSize="12"/>
-                        <TextBlock Text="        LiquidGlassBlurRadius=&quot;8&quot;" Foreground="#DCDCAA" FontSize="12"/>
-                        <TextBlock Text="        LiquidGlassRefractionAmount=&quot;60&quot;" Foreground="#DCDCAA" FontSize="12"/>
-                        <TextBlock Text="        LiquidGlassChromaticAberration=&quot;0.5&quot; /&gt;" Foreground="#DCDCAA" FontSize="12" Margin="0,0,0,12"/>
+                        <TextBlock Text="&lt;!-- JALXAML --&gt;" FontSize="12"/>
+                        <TextBlock Text="&lt;Border LiquidGlass=&quot;True&quot;" FontSize="12" Margin="0,4,0,0"/>
+                        <TextBlock Text="        CornerRadius=&quot;16&quot;" FontSize="12"/>
+                        <TextBlock Text="        Background=&quot;#200078D4&quot;" FontSize="12"/>
+                        <TextBlock Text="        LiquidGlassBlurRadius=&quot;8&quot;" FontSize="12"/>
+                        <TextBlock Text="        LiquidGlassRefractionAmount=&quot;60&quot;" FontSize="12"/>
+                        <TextBlock Text="        LiquidGlassChromaticAberration=&quot;0.5&quot; /&gt;" FontSize="12" Margin="0,0,0,12"/>
 
-                        <TextBlock Text="// C# code-behind" Foreground="#6A9955" FontSize="12"/>
-                        <TextBlock Text="border.LiquidGlass = true;" Foreground="#DCDCAA" FontSize="12" Margin="0,4,0,0"/>
-                        <TextBlock Text="border.LiquidGlassBlurRadius = 8;" Foreground="#DCDCAA" FontSize="12"/>
-                        <TextBlock Text="border.LiquidGlassRefractionAmount = 60;" Foreground="#DCDCAA" FontSize="12"/>
-                        <TextBlock Text="border.LiquidGlassChromaticAberration = 0.5;" Foreground="#DCDCAA" FontSize="12"/>
+                        <TextBlock Text="// C# code-behind" FontSize="12"/>
+                        <TextBlock Text="border.LiquidGlass = true;" FontSize="12" Margin="0,4,0,0"/>
+                        <TextBlock Text="border.LiquidGlassBlurRadius = 8;" FontSize="12"/>
+                        <TextBlock Text="border.LiquidGlassRefractionAmount = 60;" FontSize="12"/>
+                        <TextBlock Text="border.LiquidGlassChromaticAberration = 0.5;" FontSize="12"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -991,7 +956,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -1017,7 +981,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

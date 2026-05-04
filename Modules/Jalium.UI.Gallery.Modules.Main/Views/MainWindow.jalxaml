@@ -4,11 +4,18 @@
         Title="Jalium.UI Gallery"
         Width="1360"
         Height="860"
-        TitleBarHeight="56"
-        Background="#0B0814">
+        TitleBarHeight="56">
 
-    <NavigationView x:Name="NavigationView"
-                    OpenPaneLength="280"
-                    PaneTitle="JALIUM.UI"/>
+    <!--
+        Root is a Grid so the Overview landing layer can be stacked on top of
+        the NavigationView shell at startup. MainWindow.jalxaml.cs adds the
+        OverviewPage as a second child, drives the startup fade-in, and
+        cross-fades into the NavigationView when the user clicks "Enter Gallery".
+    -->
+    <Grid x:Name="RootShellGrid">
+        <NavigationView x:Name="NavigationView"
+                        OpenPaneLength="280"
+                        PaneTitle="JALIUM.UI"/>
+    </Grid>
 
 </Window>

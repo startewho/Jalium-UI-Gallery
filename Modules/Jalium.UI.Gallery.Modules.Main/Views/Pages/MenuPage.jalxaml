@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="Menu"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="Displays a list of menu items for commands and options."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic Menu Card -->
@@ -26,17 +24,15 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic Menu"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A standard menu with multiple items."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
-                    <Menu Background="Transparent">
+                    <Menu>
                         <MenuItem Header="File">
                             <MenuItem Header="New"/>
                             <MenuItem Header="Open"/>
@@ -75,17 +71,15 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Menu with Keyboard Shortcuts"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Menu items can display keyboard shortcuts."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
-                    <Menu Background="Transparent">
+                    <Menu>
                         <MenuItem Header="File">
                             <MenuItem Header="New" InputGestureText="Ctrl+N"/>
                             <MenuItem Header="Open" InputGestureText="Ctrl+O"/>
@@ -115,17 +109,15 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Nested Submenus"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Menu items can contain nested submenus."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
-                    <Menu Background="Transparent">
+                    <Menu>
                         <MenuItem Header="Settings">
                             <MenuItem Header="Appearance">
                                 <MenuItem Header="Theme">
@@ -159,7 +151,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -185,7 +176,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

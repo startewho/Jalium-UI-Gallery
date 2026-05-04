@@ -7,13 +7,11 @@
         <!-- Page Title -->
         <TextBlock Text="ColorPicker"
                    FontSize="32"
-                   Foreground="{DynamicResource GalleryTextPrimary}"
                    Margin="0,0,0,8"/>
 
         <!-- Description -->
         <TextBlock Text="A control that lets users select a color value."
                    FontSize="14"
-                   Foreground="{DynamicResource GalleryTextTertiary}"
                    Margin="0,0,0,24"/>
 
         <!-- Basic ColorPicker Card -->
@@ -26,11 +24,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Basic ColorPicker"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A full-featured color picker with spectrum and sliders."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -51,11 +47,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Compact ColorPicker"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="A more compact version for space-limited scenarios."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -76,21 +70,19 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="ColorPicker Options"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Configure which components are visible."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
                         Padding="16">
                     <StackPanel Orientation="Vertical">
-                        <TextBlock Text="With Alpha Channel:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,8"/>
+                        <TextBlock Text="With Alpha Channel:" FontSize="12" Margin="0,0,0,8"/>
                         <ColorPicker IsAlphaEnabled="True" Margin="0,0,0,16"/>
 
-                        <TextBlock Text="Without Alpha Channel:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,8"/>
+                        <TextBlock Text="Without Alpha Channel:" FontSize="12" Margin="0,0,0,8"/>
                         <ColorPicker IsAlphaEnabled="False"/>
                     </StackPanel>
                 </Border>
@@ -107,11 +99,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Interactive Demo"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Select a color and see it applied to the preview."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -120,7 +110,7 @@
                     <StackPanel Orientation="Horizontal">
                         <ColorPicker x:Name="DemoColorPicker" Width="300"/>
                         <StackPanel Orientation="Vertical" Margin="24,0,0,0" VerticalAlignment="Center">
-                            <TextBlock Text="Preview:" Foreground="{DynamicResource GalleryTextTertiary}" FontSize="12" Margin="0,0,0,8"/>
+                            <TextBlock Text="Preview:" FontSize="12" Margin="0,0,0,8"/>
                             <Border x:Name="ColorPreview"
                                     Width="100"
                                     Height="100"
@@ -129,7 +119,6 @@
                                     Margin="0,0,0,12"/>
                             <TextBlock x:Name="ColorHexText"
                                        Text="#FFD60A"
-                                       Foreground="{DynamicResource GalleryTextPrimary}"
                                        FontFamily="Consolas"
                                        HorizontalAlignment="Center"/>
                         </StackPanel>
@@ -148,11 +137,9 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Common Use Cases"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,4"/>
                 <TextBlock Text="Examples of ColorPicker in real scenarios."
                            FontSize="12"
-                           Foreground="{DynamicResource GalleryTextMuted}"
                            Margin="0,0,0,16"/>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
@@ -160,19 +147,19 @@
                         Padding="16">
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
-                            <TextBlock Text="Text Color:" Width="120" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                            <TextBlock Text="Text Color:" Width="120" VerticalAlignment="Center"/>
                             <Border Background="#FF0000" Width="32" Height="32" CornerRadius="8" Margin="0,0,8,0"/>
-                            <Button Content="Choose..." Width="80" Height="28" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Button Content="Choose..." Width="80" Height="28"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="0,0,0,16">
-                            <TextBlock Text="Background:" Width="120" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                            <TextBlock Text="Background:" Width="120" VerticalAlignment="Center"/>
                             <Border Background="#00FF00" Width="32" Height="32" CornerRadius="8" Margin="0,0,8,0"/>
-                            <Button Content="Choose..." Width="80" Height="28" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Button Content="Choose..." Width="80" Height="28"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="Border Color:" Width="120" Foreground="{DynamicResource GalleryTextTertiary}" VerticalAlignment="Center"/>
+                            <TextBlock Text="Border Color:" Width="120" VerticalAlignment="Center"/>
                             <Border Background="#0000FF" Width="32" Height="32" CornerRadius="8" Margin="0,0,8,0"/>
-                            <Button Content="Choose..." Width="80" Height="28" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                            <Button Content="Choose..." Width="80" Height="28"/>
                         </StackPanel>
                     </StackPanel>
                 </Border>
@@ -188,7 +175,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -214,7 +200,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"

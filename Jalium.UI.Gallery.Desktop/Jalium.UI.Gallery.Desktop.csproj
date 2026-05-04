@@ -12,12 +12,51 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>false</UseWindowsForms>
     <UseWPF>false</UseWPF>
-    <PublishAot Condition="'$(Configuration)' == 'Release'">false</PublishAot>
+    <PublishAot Condition="'$(Configuration)' == 'Release'">true</PublishAot>
     <PublishAot Condition="'$(Configuration)' != 'Release'">false</PublishAot>
     <PublishTrimmed>true</PublishTrimmed>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>app_logo.ico</ApplicationIcon>
+
+    <!-- ================================================================
+         NativeAOT single-exe configuration (Release/win-x64).
+         Activates Jalium.UI.Build's ConfigureJaliumNativeAot target which:
+           - rewrites every Jalium native [LibraryImport] into a static link,
+           - pulls in the per-backend .static.lib + system Win32/DirectX libs,
+           - strips the duplicate jalium.native.*.dll Interop drops alongside
+             the published exe so the output is a real single self-contained
+             binary (no managed-side DLLs of our own, no shared backend DLLs).
+         Static archives are read from
+             Jalium.UI/src/native/bin/native-static/Release/
+         (the "source-tree" fallback inside Jalium.UI.Build.targets). Build
+         them once via:
+             powershell -ExecutionPolicy Bypass -File ..\..\Jalium.UI\samples\build-native-static.ps1 -Configuration Release
+         ================================================================ -->
+    <UseJaliumNativeAot Condition="'$(Configuration)' == 'Release' and '$(PublishAot)' == 'true'">true</UseJaliumNativeAot>
+    <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == '' and '$(PublishAot)' == 'true'">win-x64</RuntimeIdentifier>
+    <SelfContained Condition="'$(PublishAot)' == 'true'">true</SelfContained>
+    <InvariantGlobalization Condition="'$(PublishAot)' == 'true'">true</InvariantGlobalization>
+    <IlcOptimizationPreference Condition="'$(PublishAot)' == 'true'">Speed</IlcOptimizationPreference>
+    <!-- Gallery ships a WebView demo page. Statically link jalium.native.browser
+         (and WebView2LoaderStatic.lib via Jalium.UI.Build's ConfigureJaliumNativeAot)
+         so the WebView control resolves CreateCoreWebView2Environment without
+         needing WebView2Loader.dll alongside the exe. The user's installed
+         Edge WebView2 Runtime is still required at runtime — that's an OS-level
+         component, not a managed/native dependency we control. -->
+    <JaliumIncludeBrowserAot Condition="'$(PublishAot)' == 'true'">true</JaliumIncludeBrowserAot>
+    <!-- Drop the third-party ffmpeg / opencv / miniaudio native DLLs that
+         Jalium.UI.Media transitively brings in. Gallery wires them at runtime
+         only when the user opens the matching media demos, so they're not
+         required for the cold-launch path. Set to false if you ship a build
+         where the user can hit the video / audio sample pages. -->
+    <JaliumStripThirdPartyMediaNatives Condition="'$(PublishAot)' == 'true'">true</JaliumStripThirdPartyMediaNatives>
+
+    <!-- Framework-internal reflective surfaces that the demo can't statically
+         prove safe (XAML runtime parser, Razor expression compiler, PropertyGrid,
+         DevTools COM marshalling). Equivalent NoWarn list as Jalium.UI's own
+         AotWindowDemo. Real bugs surface as runtime exceptions, not these. -->
+    <NoWarn>$(NoWarn);IL2026;IL2050;IL2059;IL2067;IL2068;IL2070;IL2072;IL2073;IL2075;IL3000;IL3050</NoWarn>
     <!-- 使用 Source Generator 生成代码，禁用 Build Task 的代码生成 -->
     <EnableJalxamlCodeGeneration>false</EnableJalxamlCodeGeneration>
     <DefaultItemExcludes>$(DefaultItemExcludes);obj\**\*;bin\**\*;.tmp-build\**\*</DefaultItemExcludes>
@@ -43,7 +82,20 @@
     <ProjectReference Include="..\..\Jalium.UI\src\managed\Jalium.UI.Controls\Jalium.UI.Controls.csproj" />
     <ProjectReference Include="..\..\Jalium.UI\src\managed\Jalium.UI.Xaml\Jalium.UI.Xaml.csproj" />
     <ProjectReference Include="..\..\Jalium.UI\src\managed\Jalium.UI.Gpu\Jalium.UI.Gpu.csproj" />
-    <ProjectReference Include="..\..\Jalium.UI\src\managed\Jalium.UI.Xaml.SourceGenerator\Jalium.UI.Xaml.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <!-- Windows desktop integration: brings in Jalium.UI.Desktop.dll whose
+         ModuleInitializer registers a SystemAccentResolver against ThemeManager,
+         so SystemAccentColor / AccentBrush track the user's OS accent.
+
+         ExcludeAssets="build;buildTransitive" stops Desktop's transitive
+         Jalium.UI.Build NuGet PackageReference from injecting a *second* copy
+         of Jalium.UI.Build.targets here. Gallery already imports the
+         source-tree copy directly (top + bottom of this file); without the
+         exclusion the NuGet-cached older copy wins (same target names
+         override) and ConfigureJaliumNativeAot looks in the package's
+         build/nativeaot/ folder instead of the in-repo build output. -->
+    <ProjectReference Include="..\..\Jalium.UI\src\packaging\Jalium.UI.Desktop\Jalium.UI.Desktop.csproj"
+                      ExcludeAssets="build;buildTransitive" />
+    <ProjectReference Include="..\..\Jalium.UI\src\managed\Jalium.UI.Xaml.SourceGenerator\Jalium.UI.Xaml.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" UndefineProperties="PublishAot;PublishTrimmed;PublishSingleFile;PublishReadyToRun;SelfContained;RuntimeIdentifier;RuntimeIdentifiers" />
     <!-- Build 项目：仅构建时依赖（提供 MSBuild 任务 DLL），不作为运行时引用 -->
     <ProjectReference Include="..\..\Jalium.UI\src\managed\Jalium.UI.Build\Jalium.UI.Build.csproj" ReferenceOutputAssembly="false" BuildReference="false" />
   </ItemGroup>

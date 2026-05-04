@@ -5,34 +5,34 @@
     Title="Shell Integration">
     <StackPanel Orientation="Vertical">
         <!-- Page Header -->
-        <TextBlock Text="Shell Integration" FontSize="32" FontWeight="Bold" Foreground="{DynamicResource GalleryTextPrimary}" Margin="0,0,0,8"/>
-        <TextBlock Text="Windows Shell integration with WindowChrome, JumpList, and Taskbar features." FontSize="14" Foreground="{DynamicResource GalleryTextTertiary}" Margin="0,0,0,24"/>
+        <TextBlock Text="Shell Integration" FontSize="32" FontWeight="Bold" Margin="0,0,0,8"/>
+        <TextBlock Text="Windows Shell integration with WindowChrome, JumpList, and Taskbar features." FontSize="14" Margin="0,0,0,24"/>
 
         <!-- WindowChrome Section -->
         <Border Background="{DynamicResource GalleryCardInnerBackground}" CornerRadius="14" Padding="20" Margin="0,0,0,16">
             <StackPanel>
-                <TextBlock Text="WindowChrome" FontSize="18" FontWeight="SemiBold" Foreground="{DynamicResource GalleryTextPrimary}" Margin="0,0,0,8"/>
-                <TextBlock Text="Customize window frame appearance with DWM composition support." FontSize="13" Foreground="{DynamicResource GalleryTextTertiary}" Margin="0,0,0,16"/>
+                <TextBlock Text="WindowChrome" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,8"/>
+                <TextBlock Text="Customize window frame appearance with DWM composition support." FontSize="13" Margin="0,0,0,16"/>
 
                 <StackPanel>
-                    <TextBlock Text="Properties:" FontSize="13" Foreground="{DynamicResource GalleryTextSecondary}" Margin="0,0,0,8"/>
-                    <TextBlock Text="  - CaptionHeight: Height of the title bar" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock Text="  - ResizeBorderThickness: Size of resize grips" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock Text="  - GlassFrameThickness: DWM glass frame extent" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock Text="  - CornerRadius: Window corner rounding" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock Text="  - UseAeroCaptionButtons: Use system buttons" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
+                    <TextBlock Text="Properties:" FontSize="13" Margin="0,0,0,8"/>
+                    <TextBlock Text="  - CaptionHeight: Height of the title bar" FontSize="12"/>
+                    <TextBlock Text="  - ResizeBorderThickness: Size of resize grips" FontSize="12"/>
+                    <TextBlock Text="  - GlassFrameThickness: DWM glass frame extent" FontSize="12"/>
+                    <TextBlock Text="  - CornerRadius: Window corner rounding" FontSize="12"/>
+                    <TextBlock Text="  - UseAeroCaptionButtons: Use system buttons" FontSize="12"/>
                 </StackPanel>
 
                 <Border Background="{DynamicResource GalleryCardInnerBackground}" CornerRadius="8" Padding="12" Margin="0,12,0,0">
                     <StackPanel>
-                        <TextBlock Text="// Apply custom window chrome" FontFamily="Consolas" FontSize="12" Foreground="#608B4E"/>
-                        <TextBlock Text="var chrome = new WindowChrome" FontFamily="Consolas" FontSize="12" Foreground="{DynamicResource GalleryTextSecondary}"/>
-                        <TextBlock Text="{" FontFamily="Consolas" FontSize="12" Foreground="{DynamicResource GalleryTextSecondary}"/>
-                        <TextBlock Text="    CaptionHeight = 30," FontFamily="Consolas" FontSize="12" Foreground="{DynamicResource GalleryTextSecondary}"/>
-                        <TextBlock Text="    CornerRadius = new CornerRadius(8)," FontFamily="Consolas" FontSize="12" Foreground="{DynamicResource GalleryTextSecondary}"/>
-                        <TextBlock Text="    GlassFrameThickness = new Thickness(-1)" FontFamily="Consolas" FontSize="12" Foreground="{DynamicResource GalleryTextSecondary}"/>
-                        <TextBlock Text="};" FontFamily="Consolas" FontSize="12" Foreground="{DynamicResource GalleryTextSecondary}"/>
-                        <TextBlock Text="WindowChrome.SetWindowChrome(window, chrome);" FontFamily="Consolas" FontSize="12" Foreground="{DynamicResource GalleryTextSecondary}"/>
+                        <TextBlock Text="// Apply custom window chrome" FontFamily="Consolas" FontSize="12"/>
+                        <TextBlock Text="var chrome = new WindowChrome" FontFamily="Consolas" FontSize="12"/>
+                        <TextBlock Text="{" FontFamily="Consolas" FontSize="12"/>
+                        <TextBlock Text="    CaptionHeight = 30," FontFamily="Consolas" FontSize="12"/>
+                        <TextBlock Text="    CornerRadius = new CornerRadius(8)," FontFamily="Consolas" FontSize="12"/>
+                        <TextBlock Text="    GlassFrameThickness = new Thickness(-1)" FontFamily="Consolas" FontSize="12"/>
+                        <TextBlock Text="};" FontFamily="Consolas" FontSize="12"/>
+                        <TextBlock Text="WindowChrome.SetWindowChrome(window, chrome);" FontFamily="Consolas" FontSize="12"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
@@ -41,16 +41,16 @@
         <!-- JumpList Section -->
         <Border Background="{DynamicResource GalleryCardInnerBackground}" CornerRadius="14" Padding="20" Margin="0,0,0,16">
             <StackPanel>
-                <TextBlock Text="JumpList" FontSize="18" FontWeight="SemiBold" Foreground="{DynamicResource GalleryTextPrimary}" Margin="0,0,0,8"/>
-                <TextBlock Text="Windows 7+ taskbar Jump Lists with tasks and recent items." FontSize="13" Foreground="{DynamicResource GalleryTextTertiary}" Margin="0,0,0,16"/>
+                <TextBlock Text="JumpList" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,8"/>
+                <TextBlock Text="Windows 7+ taskbar Jump Lists with tasks and recent items." FontSize="13" Margin="0,0,0,16"/>
 
-                <Button x:Name="ApplyJumpListButton" Content="Apply Sample JumpList" Width="180" HorizontalAlignment="Left" Margin="0,0,0,12" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                <Button x:Name="ApplyJumpListButton" Content="Apply Sample JumpList" Width="180" HorizontalAlignment="Left" Margin="0,0,0,12"/>
 
                 <StackPanel>
-                    <TextBlock Text="JumpList Items:" FontSize="13" Foreground="{DynamicResource GalleryTextSecondary}" Margin="0,0,0,8"/>
-                    <TextBlock Text="  - JumpTask: Launch application with arguments" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock Text="  - JumpPath: Open a specific file" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock Text="  - Custom Categories: Group items together" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
+                    <TextBlock Text="JumpList Items:" FontSize="13" Margin="0,0,0,8"/>
+                    <TextBlock Text="  - JumpTask: Launch application with arguments" FontSize="12"/>
+                    <TextBlock Text="  - JumpPath: Open a specific file" FontSize="12"/>
+                    <TextBlock Text="  - Custom Categories: Group items together" FontSize="12"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -58,38 +58,38 @@
         <!-- TaskbarItemInfo Section -->
         <Border Background="{DynamicResource GalleryCardInnerBackground}" CornerRadius="14" Padding="20" Margin="0,0,0,16">
             <StackPanel>
-                <TextBlock Text="TaskbarItemInfo" FontSize="18" FontWeight="SemiBold" Foreground="{DynamicResource GalleryTextPrimary}" Margin="0,0,0,8"/>
-                <TextBlock Text="Control taskbar thumbnail, progress indicator, and overlay icons." FontSize="13" Foreground="{DynamicResource GalleryTextTertiary}" Margin="0,0,0,16"/>
+                <TextBlock Text="TaskbarItemInfo" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,8"/>
+                <TextBlock Text="Control taskbar thumbnail, progress indicator, and overlay icons." FontSize="13" Margin="0,0,0,16"/>
 
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                    <TextBlock Text="Progress: " Foreground="{DynamicResource GalleryTextSecondary}" VerticalAlignment="Center"/>
+                    <TextBlock Text="Progress: " VerticalAlignment="Center"/>
                     <Slider x:Name="TaskbarProgressSlider" Width="200" Minimum="0" Maximum="100" Value="50" Margin="8,0,0,0"/>
-                    <TextBlock x:Name="TaskbarProgressText" Text="50%" Foreground="{DynamicResource GalleryTextSecondary}" Margin="8,0,0,0" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="TaskbarProgressText" Text="50%" Margin="8,0,0,0" VerticalAlignment="Center"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
-                    <TextBlock Text="Progress State: " Foreground="{DynamicResource GalleryTextSecondary}" VerticalAlignment="Center" Margin="0,0,8,0"/>
-                    <Button x:Name="ProgressNoneButton" Content="None" Width="70" Margin="0,0,4,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                    <Button x:Name="ProgressNormalButton" Content="Normal" Width="70" Margin="0,0,4,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                    <Button x:Name="ProgressPausedButton" Content="Paused" Width="70" Margin="0,0,4,0" Foreground="{DynamicResource GalleryTextPrimary}"/>
-                    <Button x:Name="ProgressErrorButton" Content="Error" Width="70" Foreground="{DynamicResource GalleryTextPrimary}"/>
+                    <TextBlock Text="Progress State: " VerticalAlignment="Center" Margin="0,0,8,0"/>
+                    <Button x:Name="ProgressNoneButton" Content="None" Width="70" Margin="0,0,4,0"/>
+                    <Button x:Name="ProgressNormalButton" Content="Normal" Width="70" Margin="0,0,4,0"/>
+                    <Button x:Name="ProgressPausedButton" Content="Paused" Width="70" Margin="0,0,4,0"/>
+                    <Button x:Name="ProgressErrorButton" Content="Error" Width="70"/>
                 </StackPanel>
 
-                <TextBlock x:Name="TaskbarStatus" Text="Taskbar State: None" FontSize="12" Foreground="#808080"/>
+                <TextBlock x:Name="TaskbarStatus" Text="Taskbar State: None" FontSize="12"/>
             </StackPanel>
         </Border>
 
         <!-- SystemParameters2 Section -->
         <Border Background="{DynamicResource GalleryCardInnerBackground}" CornerRadius="14" Padding="20" Margin="0,0,0,16">
             <StackPanel>
-                <TextBlock Text="SystemParameters2" FontSize="18" FontWeight="SemiBold" Foreground="{DynamicResource GalleryTextPrimary}" Margin="0,0,0,8"/>
-                <TextBlock Text="Access system metrics and DWM state information." FontSize="13" Foreground="{DynamicResource GalleryTextTertiary}" Margin="0,0,0,16"/>
+                <TextBlock Text="SystemParameters2" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,8"/>
+                <TextBlock Text="Access system metrics and DWM state information." FontSize="13" Margin="0,0,0,16"/>
 
                 <StackPanel>
-                    <TextBlock x:Name="GlassEnabledText" Text="DWM Glass Enabled: True" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock x:Name="GlassColorText" Text="Glass Color: #6495ED" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock x:Name="CaptionHeightText" Text="Caption Height: 30" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
-                    <TextBlock x:Name="ResizeBorderText" Text="Resize Border: 4,4,4,4" FontSize="12" Foreground="{DynamicResource GalleryTextTertiary}"/>
+                    <TextBlock x:Name="GlassEnabledText" Text="DWM Glass Enabled: True" FontSize="12"/>
+                    <TextBlock x:Name="GlassColorText" Text="Glass Color: #6495ED" FontSize="12"/>
+                    <TextBlock x:Name="CaptionHeightText" Text="Caption Height: 30" FontSize="12"/>
+                    <TextBlock x:Name="ResizeBorderText" Text="Resize Border: 4,4,4,4" FontSize="12"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -103,7 +103,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="XAML Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
@@ -129,7 +128,6 @@
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="C# Code Example"
                            FontSize="16"
-                           Foreground="{DynamicResource GalleryTextPrimary}"
                            Margin="0,0,0,16"/>
                 <Border Background="{DynamicResource GalleryCardInnerBackground}"
                         CornerRadius="8"
